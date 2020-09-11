@@ -1,0 +1,1600 @@
+Symbol range map extraction starting
+Processing 11 files
+processing hms\betterzoom\BetterZoom.java
+@|hms\betterzoom\BetterZoom.java|8|22|hms.betterzoom|package|hms.betterzoom|(file)
+Class Start: hms.betterzoom.BetterZoom
+   @|hms\betterzoom\BetterZoom.java|1048|1058|BetterZoom|class|hms.betterzoom.BetterZoom
+   @|hms\betterzoom\BetterZoom.java|1059|1067|instance|field|hms.betterzoom.BetterZoom|instance|
+   @|hms\betterzoom\BetterZoom.java|1085|1094|ZoomEvent|class|hms.betterzoom.ZoomEvent
+   @|hms\betterzoom\BetterZoom.java|1095|1105|zeInstance|field|hms.betterzoom.BetterZoom|zeInstance|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|hms\betterzoom\BetterZoom.java|1136|1143|preInit|method|hms.betterzoom.BetterZoom|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|hms\betterzoom\BetterZoom.java|1144|1169|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|hms\betterzoom\BetterZoom.java|1170|1175|event|param|hms.betterzoom.BetterZoom|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|hms\betterzoom\BetterZoom.java|1185|1200|doesConfigExist|method|hms.betterzoom.BetterZoom|doesConfigExist|()Z
+      @|hms\betterzoom\BetterZoom.java|1206|1217|isFileValid|method|hms.betterzoom.BetterZoom|isFileValid|()Z
+      @|hms\betterzoom\BetterZoom.java|1226|1232|System|class|java.lang.System
+      @|hms\betterzoom\BetterZoom.java|1233|1236|out|field|java.lang.System|out
+      @|hms\betterzoom\BetterZoom.java|1237|1244|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|hms\betterzoom\BetterZoom.java|1288|1304|createConfigFile|method|hms.betterzoom.BetterZoom|createConfigFile|()Z
+      @|hms\betterzoom\BetterZoom.java|1314|1323|ZoomEvent|class|hms.betterzoom.ZoomEvent
+      @|hms\betterzoom\BetterZoom.java|1333|1342|ZoomEvent|class|hms.betterzoom.ZoomEvent
+      @|hms\betterzoom\BetterZoom.java|1348|1358|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\BetterZoom.java|1359|1369|zeInstance|field|hms.betterzoom.BetterZoom|zeInstance
+      @|hms\betterzoom\BetterZoom.java|1378|1389|ZoomKeyBind|class|hms.betterzoom.ZoomKeyBind
+      @|hms\betterzoom\BetterZoom.java|1390|1398|register|method|hms.betterzoom.ZoomKeyBind|register|()V
+      @|hms\betterzoom\BetterZoom.java|1404|1424|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|hms\betterzoom\BetterZoom.java|1425|1433|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|hms\betterzoom\BetterZoom.java|1434|1449|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|hms\betterzoom\BetterZoom.java|1454|1462|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\BetterZoom.java|1469|1483|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|hms\betterzoom\BetterZoom.java|1484|1493|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|hms\betterzoom\BetterZoom.java|1494|1502|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|hms\betterzoom\BetterZoom.java|1541|1545|init|method|hms.betterzoom.BetterZoom|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|hms\betterzoom\BetterZoom.java|1546|1568|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|hms\betterzoom\BetterZoom.java|1569|1574|event|param|hms.betterzoom.BetterZoom|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|hms\betterzoom\BetterZoom.java|1580|1586|System|class|java.lang.System
+      @|hms\betterzoom\BetterZoom.java|1587|1590|out|field|java.lang.System|out
+      @|hms\betterzoom\BetterZoom.java|1591|1598|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|hms\betterzoom\BetterZoom.java|1623|1632|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\BetterZoom.java|1633|1640|VERSION|field|hms.betterzoom.ref.Reference|VERSION
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|hms\betterzoom\BetterZoom.java|1688|1696|postInit|method|hms.betterzoom.BetterZoom|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|hms\betterzoom\BetterZoom.java|1697|1723|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|hms\betterzoom\BetterZoom.java|1724|1729|event|param|hms.betterzoom.BetterZoom|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|hms\betterzoom\BetterZoom.java|1735|1744|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\BetterZoom.java|1745|1751|update|method|hms.betterzoom.ref.Reference|update|()V
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+   Method Start: restart()V
+      @|hms\betterzoom\BetterZoom.java|1834|1841|restart|method|hms.betterzoom.BetterZoom|restart|()V
+      @|hms\betterzoom\BetterZoom.java|1852|1867|doesConfigExist|method|hms.betterzoom.BetterZoom|doesConfigExist|()Z
+      @|hms\betterzoom\BetterZoom.java|1876|1880|File|class|java.io.File
+      @|hms\betterzoom\BetterZoom.java|1889|1893|File|class|java.io.File
+      @|hms\betterzoom\BetterZoom.java|1894|1900|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\BetterZoom.java|1901|1909|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\BetterZoom.java|1912|1924|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\BetterZoom.java|1964|1970|delete|method|java.io.File|delete|()Z
+      @|hms\betterzoom\BetterZoom.java|1980|1996|createConfigFile|method|hms.betterzoom.BetterZoom|createConfigFile|()Z
+   Method End: restart()V
+   Method Start: doesConfigExist()Z
+      @|hms\betterzoom\BetterZoom.java|2042|2057|doesConfigExist|method|hms.betterzoom.BetterZoom|doesConfigExist|()Z
+      @|hms\betterzoom\BetterZoom.java|2064|2068|File|class|java.io.File
+      @|hms\betterzoom\BetterZoom.java|2086|2090|File|class|java.io.File
+      @|hms\betterzoom\BetterZoom.java|2091|2097|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\BetterZoom.java|2098|2106|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\BetterZoom.java|2109|2121|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\BetterZoom.java|2124|2139|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2190|2196|exists|method|java.io.File|exists|()Z
+   Method End: doesConfigExist()Z
+   Method Start: isFileValid()Z
+      @|hms\betterzoom\BetterZoom.java|2250|2261|isFileValid|method|hms.betterzoom.BetterZoom|isFileValid|()Z
+      @|hms\betterzoom\BetterZoom.java|2299|2306|Boolean|class|java.lang.Boolean
+      @|hms\betterzoom\BetterZoom.java|2307|2319|parseBoolean|method|java.lang.Boolean|parseBoolean|(Ljava/lang/String;)Z
+      @|hms\betterzoom\BetterZoom.java|2320|2325|Files|class|java.nio.file.Files
+      @|hms\betterzoom\BetterZoom.java|2332|2344|readAllLines|method|java.nio.file.Files|readAllLines|(Ljava/nio/file/Path;)Ljava/util/List;
+      @|hms\betterzoom\BetterZoom.java|2353|2358|Paths|class|java.nio.file.Paths
+      @|hms\betterzoom\BetterZoom.java|2359|2362|get|method|java.nio.file.Paths|get|(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      @|hms\betterzoom\BetterZoom.java|2363|2369|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\BetterZoom.java|2370|2378|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\BetterZoom.java|2381|2393|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\BetterZoom.java|2396|2411|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2448|2451|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|hms\betterzoom\BetterZoom.java|2455|2462|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2508|2515|Boolean|class|java.lang.Boolean
+      @|hms\betterzoom\BetterZoom.java|2516|2528|parseBoolean|method|java.lang.Boolean|parseBoolean|(Ljava/lang/String;)Z
+      @|hms\betterzoom\BetterZoom.java|2529|2534|Files|class|java.nio.file.Files
+      @|hms\betterzoom\BetterZoom.java|2541|2553|readAllLines|method|java.nio.file.Files|readAllLines|(Ljava/nio/file/Path;)Ljava/util/List;
+      @|hms\betterzoom\BetterZoom.java|2562|2567|Paths|class|java.nio.file.Paths
+      @|hms\betterzoom\BetterZoom.java|2568|2571|get|method|java.nio.file.Paths|get|(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      @|hms\betterzoom\BetterZoom.java|2572|2578|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\BetterZoom.java|2579|2587|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\BetterZoom.java|2590|2602|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\BetterZoom.java|2605|2620|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2657|2660|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|hms\betterzoom\BetterZoom.java|2664|2671|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2726|2733|Integer|class|java.lang.Integer
+      @|hms\betterzoom\BetterZoom.java|2734|2742|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|hms\betterzoom\BetterZoom.java|2743|2748|Files|class|java.nio.file.Files
+      @|hms\betterzoom\BetterZoom.java|2755|2767|readAllLines|method|java.nio.file.Files|readAllLines|(Ljava/nio/file/Path;)Ljava/util/List;
+      @|hms\betterzoom\BetterZoom.java|2776|2781|Paths|class|java.nio.file.Paths
+      @|hms\betterzoom\BetterZoom.java|2782|2785|get|method|java.nio.file.Paths|get|(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      @|hms\betterzoom\BetterZoom.java|2786|2792|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\BetterZoom.java|2793|2801|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\BetterZoom.java|2804|2816|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\BetterZoom.java|2819|2834|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2871|2874|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|hms\betterzoom\BetterZoom.java|2878|2885|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|2925|2934|Exception|class|java.lang.Exception
+   Method End: isFileValid()Z
+   Method Start: createConfigFile()Z
+      @|hms\betterzoom\BetterZoom.java|2998|3014|createConfigFile|method|hms.betterzoom.BetterZoom|createConfigFile|()Z
+      @|hms\betterzoom\BetterZoom.java|3095|3099|File|class|java.io.File
+      @|hms\betterzoom\BetterZoom.java|3113|3117|File|class|java.io.File
+      @|hms\betterzoom\BetterZoom.java|3118|3124|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\BetterZoom.java|3125|3133|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\BetterZoom.java|3136|3148|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\BetterZoom.java|3151|3166|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|3211|3224|createNewFile|method|java.io.File|createNewFile|()Z
+      @|hms\betterzoom\BetterZoom.java|3234|3248|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\BetterZoom.java|3262|3276|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\BetterZoom.java|3281|3291|FileWriter|class|java.io.FileWriter
+      @|hms\betterzoom\BetterZoom.java|3313|3319|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\BetterZoom.java|3337|3343|String|class|java.lang.String
+      @|hms\betterzoom\BetterZoom.java|3344|3351|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|3372|3379|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\BetterZoom.java|3394|3400|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\BetterZoom.java|3430|3436|String|class|java.lang.String
+      @|hms\betterzoom\BetterZoom.java|3437|3444|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|3465|3472|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\BetterZoom.java|3487|3493|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\BetterZoom.java|3518|3524|String|class|java.lang.String
+      @|hms\betterzoom\BetterZoom.java|3525|3532|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
+      @|hms\betterzoom\BetterZoom.java|3551|3558|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\BetterZoom.java|3573|3578|close|method|java.lang.AutoCloseable|close|()V
+      @|hms\betterzoom\BetterZoom.java|3586|3595|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\BetterZoom.java|3596|3602|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\BetterZoom.java|3652|3663|IOException|class|java.io.IOException
+      @|hms\betterzoom\BetterZoom.java|3674|3689|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: createConfigFile()Z
+Class End  : hms.betterzoom.BetterZoom
+endProcessing hms\betterzoom\BetterZoom.java
+
+processing hms\betterzoom\Commands\Settings.java
+@|hms\betterzoom\Commands\Settings.java|8|31|hms.betterzoom.Commands|package|hms.betterzoom.Commands|(file)
+Class Start: hms.betterzoom.Commands.Settings
+   @|hms\betterzoom\Commands\Settings.java|707|713|String|class|java.lang.String
+   @|hms\betterzoom\Commands\Settings.java|714|716|bz|field|hms.betterzoom.Commands.Settings|bz|
+   @|hms\betterzoom\Commands\Settings.java|734|747|silentCommand|field|hms.betterzoom.Commands.Settings|silentCommand|
+   Method Start: getCommandName()Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|773|787|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|766|772|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|834|849|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|827|833|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|856|870|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|hms\betterzoom\Commands\Settings.java|871|877|sender|param|hms.betterzoom.Commands.Settings|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|hms\betterzoom\Commands\Settings.java|912|926|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|hms\betterzoom\Commands\Settings.java|984|1000|CommandException|class|net.minecraft.command.CommandException
+      @|hms\betterzoom\Commands\Settings.java|933|947|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|hms\betterzoom\Commands\Settings.java|948|954|sender|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|hms\betterzoom\Commands\Settings.java|962|968|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|971|975|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1009|1013|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|hms\betterzoom\Commands\Settings.java|1036|1040|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1044|1060|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1074|1087|silentCommand|field|hms.betterzoom.Commands.Settings|silentCommand
+      @|hms\betterzoom\Commands\Settings.java|1111|1115|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|hms\betterzoom\Commands\Settings.java|1137|1141|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1145|1161|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1170|1174|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1178|1194|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1212|1221|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|1222|1232|setToggled|method|hms.betterzoom.ref.Reference|setToggled|(Z)V
+      @|hms\betterzoom\Commands\Settings.java|1234|1243|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|1244|1256|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\Commands\Settings.java|1263|1273|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|1274|1284|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|1292|1294|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|1320|1339|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|1340|1349|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|1350|1362|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\Commands\Settings.java|1394|1398|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1402|1418|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1429|1433|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1437|1453|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1472|1481|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|1482|1492|setToggled|method|hms.betterzoom.ref.Reference|setToggled|(Z)V
+      @|hms\betterzoom\Commands\Settings.java|1505|1515|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|1516|1526|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|1527|1529|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|1574|1578|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1582|1598|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1608|1612|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1616|1632|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1650|1659|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|1660|1670|setToggled|method|hms.betterzoom.ref.Reference|setToggled|(Z)V
+      @|hms\betterzoom\Commands\Settings.java|1682|1692|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|1693|1703|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|1704|1706|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|1750|1754|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1758|1774|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1802|1806|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|hms\betterzoom\Commands\Settings.java|1830|1834|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1838|1854|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1868|1872|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|1876|1892|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|1908|1917|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|1918|1931|setSmoothZoom|method|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V
+      @|hms\betterzoom\Commands\Settings.java|1945|1955|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|1956|1966|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2039|2043|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|2047|2063|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|2078|2082|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|2086|2102|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|2119|2128|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|2129|2142|setSmoothZoom|method|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V
+      @|hms\betterzoom\Commands\Settings.java|2157|2167|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|2168|2178|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2256|2266|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|2267|2277|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2278|2280|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|2372|2382|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|2383|2393|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2394|2396|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|2483|2487|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|2491|2507|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|2539|2543|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|hms\betterzoom\Commands\Settings.java|2579|2596|validateZoomLevel|method|hms.betterzoom.Commands.Settings|validateZoomLevel|(I)Z
+      @|hms\betterzoom\Commands\Settings.java|2597|2604|Integer|class|java.lang.Integer
+      @|hms\betterzoom\Commands\Settings.java|2605|2613|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|hms\betterzoom\Commands\Settings.java|2614|2618|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|2652|2659|Integer|class|java.lang.Integer
+      @|hms\betterzoom\Commands\Settings.java|2660|2668|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|hms\betterzoom\Commands\Settings.java|2669|2673|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|2686|2695|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|2696|2715|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\Commands\Settings.java|2752|2762|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|2763|2773|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2774|2776|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|2853|2874|NumberFormatException|class|java.lang.NumberFormatException
+      @|hms\betterzoom\Commands\Settings.java|2886|2896|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|2897|2907|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2908|2910|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|2913|2917|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|2976|2986|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|2987|2997|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|2998|3000|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|3073|3077|args|param|hms.betterzoom.Commands.Settings|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|hms\betterzoom\Commands\Settings.java|3081|3097|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|3115|3125|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3126|3136|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3137|3139|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|3183|3193|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3194|3204|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3205|3207|bz|field|hms.betterzoom.Commands.Settings|bz
+      @|hms\betterzoom\Commands\Settings.java|3226|3236|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3237|3247|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3276|3286|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3287|3297|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3343|3353|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3354|3364|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3407|3417|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3418|3428|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3473|3483|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3484|3494|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3547|3557|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3558|3568|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3616|3626|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3627|3637|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3670|3680|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|3681|3691|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|3718|3727|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\Commands\Settings.java|3728|3734|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\Commands\Settings.java|3752|3766|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|hms\betterzoom\Commands\Settings.java|3767|3776|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|hms\betterzoom\Commands\Settings.java|3777|3785|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+      @|hms\betterzoom\Commands\Settings.java|3828|3854|canCommandSenderUseCommand|method|net.minecraft.command.ICommand|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z
+      @|hms\betterzoom\Commands\Settings.java|3861|3875|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|hms\betterzoom\Commands\Settings.java|3876|3882|sender|param|hms.betterzoom.Commands.Settings|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z|sender|0
+   Method End: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+   Method Start: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|hms\betterzoom\Commands\Settings.java|3937|3960|addTabCompletionOptions|method|net.minecraft.command.ICommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|hms\betterzoom\Commands\Settings.java|3929|3935|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|3924|3928|List|class|java.util.List
+      @|hms\betterzoom\Commands\Settings.java|3967|3981|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|hms\betterzoom\Commands\Settings.java|3982|3988|sender|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|sender|0
+      @|hms\betterzoom\Commands\Settings.java|3996|4002|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|4005|4009|args|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|hms\betterzoom\Commands\Settings.java|4017|4025|BlockPos|class|net.minecraft.util.BlockPos
+      @|hms\betterzoom\Commands\Settings.java|4026|4029|pos|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|pos|2
+      @|hms\betterzoom\Commands\Settings.java|4039|4043|args|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      Field: Array Length, skipping
+      @|hms\betterzoom\Commands\Settings.java|4068|4072|List|class|java.util.List
+      @|hms\betterzoom\Commands\Settings.java|4073|4079|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|4094|4103|ArrayList|class|java.util.ArrayList
+      @|hms\betterzoom\Commands\Settings.java|4104|4110|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|4125|4128|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\Commands\Settings.java|4160|4163|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\Commands\Settings.java|4191|4194|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\Commands\Settings.java|4216|4219|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\Commands\Settings.java|4237|4240|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\Commands\Settings.java|4259|4291|getListOfStringsMatchingLastWord|method|net.minecraft.command.CommandBase|getListOfStringsMatchingLastWord|([Ljava/lang/String;Ljava/util/Collection;)Ljava/util/List;
+      @|hms\betterzoom\Commands\Settings.java|4292|4296|args|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|hms\betterzoom\Commands\Settings.java|4320|4324|args|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      Field: Array Length, skipping
+      @|hms\betterzoom\Commands\Settings.java|4347|4351|args|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|hms\betterzoom\Commands\Settings.java|4355|4371|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|hms\betterzoom\Commands\Settings.java|4402|4434|getListOfStringsMatchingLastWord|method|net.minecraft.command.CommandBase|getListOfStringsMatchingLastWord|([Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
+      @|hms\betterzoom\Commands\Settings.java|4435|4439|args|param|hms.betterzoom.Commands.Settings|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|hms\betterzoom\Commands\Settings.java|4445|4451|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|4499|4508|ArrayList|class|java.util.ArrayList
+      @|hms\betterzoom\Commands\Settings.java|4509|4515|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|4545|4554|ArrayList|class|java.util.ArrayList
+      @|hms\betterzoom\Commands\Settings.java|4555|4561|String|class|java.lang.String
+   Method End: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+   @|hms\betterzoom\Commands\Settings.java|4586|4594|Settings|class|hms.betterzoom.Commands.Settings
+   @|hms\betterzoom\Commands\Settings.java|4595|4597|bz|field|hms.betterzoom.Commands.Settings|bz
+   @|hms\betterzoom\Commands\Settings.java|4601|4619|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+   @|hms\betterzoom\Commands\Settings.java|4620|4625|BLACK|field|net.minecraft.util.EnumChatFormatting|BLACK
+   @|hms\betterzoom\Commands\Settings.java|4634|4652|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+   @|hms\betterzoom\Commands\Settings.java|4653|4658|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+   @|hms\betterzoom\Commands\Settings.java|4698|4716|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+   @|hms\betterzoom\Commands\Settings.java|4717|4722|BLACK|field|net.minecraft.util.EnumChatFormatting|BLACK
+   @|hms\betterzoom\Commands\Settings.java|4732|4750|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+   @|hms\betterzoom\Commands\Settings.java|4751|4755|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+   Method Start: addMessage(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|4781|4791|addMessage|method|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V
+      @|hms\betterzoom\Commands\Settings.java|4792|4809|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|hms\betterzoom\Commands\Settings.java|4810|4817|message|param|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V|message|0
+      @|hms\betterzoom\Commands\Settings.java|4827|4840|silentCommand|field|hms.betterzoom.Commands.Settings|silentCommand
+      @|hms\betterzoom\Commands\Settings.java|4855|4868|silentCommand|field|hms.betterzoom.Commands.Settings|silentCommand
+      @|hms\betterzoom\Commands\Settings.java|4895|4904|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\Commands\Settings.java|4905|4917|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\Commands\Settings.java|4920|4929|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|hms\betterzoom\Commands\Settings.java|4930|4944|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|hms\betterzoom\Commands\Settings.java|4945|4952|message|param|hms.betterzoom.Commands.Settings|addMessage|(Lnet/minecraft/util/ChatComponentText;)V|message|0
+   Method End: addMessage(Lnet/minecraft/util/ChatComponentText;)V
+   Method Start: validateZoomLevel(I)Z
+      @|hms\betterzoom\Commands\Settings.java|4975|4992|validateZoomLevel|method|hms.betterzoom.Commands.Settings|validateZoomLevel|(I)Z
+      @|hms\betterzoom\Commands\Settings.java|4997|4998|i|param|hms.betterzoom.Commands.Settings|validateZoomLevel|(I)Z|i|0
+      @|hms\betterzoom\Commands\Settings.java|5008|5009|i|param|hms.betterzoom.Commands.Settings|validateZoomLevel|(I)Z|i|0
+   Method End: validateZoomLevel(I)Z
+   Method Start: convertBoolToString(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|5091|5110|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|5084|5090|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|5119|5123|bool|param|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;|bool|0
+      @|hms\betterzoom\Commands\Settings.java|5125|5131|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|5132|5138|falseV|param|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;|falseV|1
+      @|hms\betterzoom\Commands\Settings.java|5140|5146|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|5147|5152|trueV|param|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;|trueV|2
+      @|hms\betterzoom\Commands\Settings.java|5162|5166|bool|param|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;|bool|0
+      @|hms\betterzoom\Commands\Settings.java|5188|5193|trueV|param|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;|trueV|2
+      @|hms\betterzoom\Commands\Settings.java|5216|5222|falseV|param|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;|falseV|1
+   Method End: convertBoolToString(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   Method Start: getMessage(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|5258|5268|getMessage|method|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+      @|hms\betterzoom\Commands\Settings.java|5240|5257|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|hms\betterzoom\Commands\Settings.java|5269|5275|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|5276|5283|message|param|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;|message|0
+      @|hms\betterzoom\Commands\Settings.java|5289|5306|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|hms\betterzoom\Commands\Settings.java|5317|5334|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|hms\betterzoom\Commands\Settings.java|5335|5342|message|param|hms.betterzoom.Commands.Settings|getMessage|(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;|message|0
+      @|hms\betterzoom\Commands\Settings.java|5351|5363|getChatStyle|method|net.minecraft.util.IChatComponent|getChatStyle|()Lnet/minecraft/util/ChatStyle;
+      @|hms\betterzoom\Commands\Settings.java|5366|5374|setColor|method|net.minecraft.util.ChatStyle|setColor|(Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;
+      @|hms\betterzoom\Commands\Settings.java|5375|5393|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|hms\betterzoom\Commands\Settings.java|5394|5398|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+   Method End: getMessage(Ljava/lang/String;)Lnet/minecraft/util/ChatComponentText;
+   Method Start: toString()Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|5445|5453|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|5438|5444|String|class|java.lang.String
+      @|hms\betterzoom\Commands\Settings.java|5479|5487|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|hms\betterzoom\Commands\Settings.java|5490|5498|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|hms\betterzoom\Commands\Settings.java|5519|5533|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+   Method End: toString()Ljava/lang/String;
+   Method Start: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|hms\betterzoom\Commands\Settings.java|5649|5655|onTick|method|hms.betterzoom.Commands.Settings|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|hms\betterzoom\Commands\Settings.java|5656|5671|ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|hms\betterzoom\Commands\Settings.java|5672|5673|e|param|hms.betterzoom.Commands.Settings|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|e|0
+      @|hms\betterzoom\Commands\Settings.java|5679|5688|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\Commands\Settings.java|5689|5701|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\Commands\Settings.java|5704|5720|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|hms\betterzoom\Commands\Settings.java|5725|5732|MainGui|class|hms.betterzoom.gui.MainGui
+      @|hms\betterzoom\Commands\Settings.java|5739|5753|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|hms\betterzoom\Commands\Settings.java|5754|5763|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|hms\betterzoom\Commands\Settings.java|5764|5774|unregister|method|net.minecraftforge.fml.common.eventhandler.EventBus|unregister|(Ljava/lang/Object;)V
+   Method End: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+Class End  : hms.betterzoom.Commands.Settings
+endProcessing hms\betterzoom\Commands\Settings.java
+
+processing hms\betterzoom\ZoomEvent.java
+@|hms\betterzoom\ZoomEvent.java|8|22|hms.betterzoom|package|hms.betterzoom|(file)
+Class Start: hms.betterzoom.ZoomEvent
+   @|hms\betterzoom\ZoomEvent.java|471|475|zoom|field|hms.betterzoom.ZoomEvent|zoom|
+   @|hms\betterzoom\ZoomEvent.java|491|493|zo|field|hms.betterzoom.ZoomEvent|zo|
+   @|hms\betterzoom\ZoomEvent.java|496|505|Reference|class|hms.betterzoom.ref.Reference
+   @|hms\betterzoom\ZoomEvent.java|506|522|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+   @|hms\betterzoom\ZoomEvent.java|531|537|scroll|field|hms.betterzoom.ZoomEvent|scroll|
+   @|hms\betterzoom\ZoomEvent.java|552|559|smoothC|field|hms.betterzoom.ZoomEvent|smoothC|
+   @|hms\betterzoom\ZoomEvent.java|570|574|publ|field|hms.betterzoom.ZoomEvent|publ|
+   @|hms\betterzoom\ZoomEvent.java|583|589|oldFOV|field|hms.betterzoom.ZoomEvent|oldFOV|
+   Method Start: ZoomEvent()V
+      @|hms\betterzoom\ZoomEvent.java|600|609|ZoomEvent|method|hms.betterzoom.ZoomEvent|ZoomEvent|()V
+      @|hms\betterzoom\ZoomEvent.java|621|625|zoom|field|hms.betterzoom.ZoomEvent|zoom
+      @|hms\betterzoom\ZoomEvent.java|642|644|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|661|665|publ|field|hms.betterzoom.ZoomEvent|publ
+   Method End: ZoomEvent()V
+   Method Start: onMouseEvent(Lnet/minecraftforge/client/event/MouseEvent;)V
+      @|hms\betterzoom\ZoomEvent.java|771|783|onMouseEvent|method|hms.betterzoom.ZoomEvent|onMouseEvent|(Lnet/minecraftforge/client/event/MouseEvent;)V
+      @|hms\betterzoom\ZoomEvent.java|790|800|MouseEvent|class|net.minecraftforge.client.event.MouseEvent
+      @|hms\betterzoom\ZoomEvent.java|801|806|event|param|hms.betterzoom.ZoomEvent|onMouseEvent|(Lnet/minecraftforge/client/event/MouseEvent;)V|event|0
+      @|hms\betterzoom\ZoomEvent.java|816|825|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ZoomEvent.java|826|838|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\ZoomEvent.java|850|856|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|867|872|event|param|hms.betterzoom.ZoomEvent|onMouseEvent|(Lnet/minecraftforge/client/event/MouseEvent;)V|event|0
+      @|hms\betterzoom\ZoomEvent.java|873|879|dwheel|field|net.minecraftforge.client.event.MouseEvent|dwheel
+      @|hms\betterzoom\ZoomEvent.java|888|899|ZoomKeyBind|class|hms.betterzoom.ZoomKeyBind
+      @|hms\betterzoom\ZoomEvent.java|900|904|zoom|field|hms.betterzoom.ZoomKeyBind|zoom
+      @|hms\betterzoom\ZoomEvent.java|905|914|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|hms\betterzoom\ZoomEvent.java|933|939|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|955|957|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|980|982|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|997|1006|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1007|1019|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1022|1034|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|1035|1045|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\ZoomEvent.java|1053|1055|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|1064|1073|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1074|1086|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1089|1098|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|hms\betterzoom\ZoomEvent.java|1099|1108|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|hms\betterzoom\ZoomEvent.java|1109|1120|currentItem|field|net.minecraft.entity.player.InventoryPlayer|currentItem
+      @|hms\betterzoom\ZoomEvent.java|1132|1138|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|1167|1173|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|1189|1191|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|1212|1214|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|1229|1238|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1239|1251|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1254|1266|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|1267|1277|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\ZoomEvent.java|1285|1287|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|1296|1305|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1306|1318|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1321|1330|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|hms\betterzoom\ZoomEvent.java|1331|1340|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|hms\betterzoom\ZoomEvent.java|1341|1352|currentItem|field|net.minecraft.entity.player.InventoryPlayer|currentItem
+      @|hms\betterzoom\ZoomEvent.java|1364|1370|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|1399|1405|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|1423|1432|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1433|1445|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1448|1457|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|hms\betterzoom\ZoomEvent.java|1458|1467|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|hms\betterzoom\ZoomEvent.java|1468|1479|currentItem|field|net.minecraft.entity.player.InventoryPlayer|currentItem
+      @|hms\betterzoom\ZoomEvent.java|1491|1497|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|1526|1532|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|1550|1559|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1560|1572|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1575|1584|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|hms\betterzoom\ZoomEvent.java|1585|1594|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|hms\betterzoom\ZoomEvent.java|1595|1606|currentItem|field|net.minecraft.entity.player.InventoryPlayer|currentItem
+      @|hms\betterzoom\ZoomEvent.java|1618|1624|scroll|field|hms.betterzoom.ZoomEvent|scroll
+   Method End: onMouseEvent(Lnet/minecraftforge/client/event/MouseEvent;)V
+   Method Start: tickUpdate(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|hms\betterzoom\ZoomEvent.java|1765|1775|tickUpdate|method|hms.betterzoom.ZoomEvent|tickUpdate|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|hms\betterzoom\ZoomEvent.java|1782|1797|ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|hms\betterzoom\ZoomEvent.java|1798|1799|e|param|hms.betterzoom.ZoomEvent|tickUpdate|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|e|0
+      @|hms\betterzoom\ZoomEvent.java|1809|1818|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ZoomEvent.java|1819|1831|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\ZoomEvent.java|1842|1853|ZoomKeyBind|class|hms.betterzoom.ZoomKeyBind
+      @|hms\betterzoom\ZoomEvent.java|1854|1858|zoom|field|hms.betterzoom.ZoomKeyBind|zoom
+      @|hms\betterzoom\ZoomEvent.java|1859|1868|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|hms\betterzoom\ZoomEvent.java|1887|1891|publ|field|hms.betterzoom.ZoomEvent|publ
+      @|hms\betterzoom\ZoomEvent.java|1900|1927|ObfuscationReflectionHelper|class|net.minecraftforge.fml.common.ObfuscationReflectionHelper
+      @|hms\betterzoom\ZoomEvent.java|1928|1943|setPrivateValue|method|net.minecraftforge.fml.common.ObfuscationReflectionHelper|setPrivateValue|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/String;)V
+      @|hms\betterzoom\ZoomEvent.java|1944|1958|EntityRenderer|class|net.minecraft.client.renderer.EntityRenderer
+      @|hms\betterzoom\ZoomEvent.java|1973|1982|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|1983|1995|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|1998|2012|entityRenderer|field|net.minecraft.client.Minecraft|entityRenderer
+      @|hms\betterzoom\ZoomEvent.java|2065|2071|oldFOV|field|hms.betterzoom.ZoomEvent|oldFOV
+      @|hms\betterzoom\ZoomEvent.java|2074|2083|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2084|2096|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2099|2111|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|2112|2122|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\ZoomEvent.java|2134|2138|publ|field|hms.betterzoom.ZoomEvent|publ
+      @|hms\betterzoom\ZoomEvent.java|2157|2166|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ZoomEvent.java|2167|2188|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\ZoomEvent.java|2198|2207|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2208|2220|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2223|2235|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|2236|2248|smoothCamera|field|net.minecraft.client.settings.GameSettings|smoothCamera
+      @|hms\betterzoom\ZoomEvent.java|2274|2301|ObfuscationReflectionHelper|class|net.minecraftforge.fml.common.ObfuscationReflectionHelper
+      @|hms\betterzoom\ZoomEvent.java|2302|2317|setPrivateValue|method|net.minecraftforge.fml.common.ObfuscationReflectionHelper|setPrivateValue|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/String;)V
+      @|hms\betterzoom\ZoomEvent.java|2318|2332|EntityRenderer|class|net.minecraft.client.renderer.EntityRenderer
+      @|hms\betterzoom\ZoomEvent.java|2346|2355|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2356|2368|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2371|2385|entityRenderer|field|net.minecraft.client.Minecraft|entityRenderer
+      @|hms\betterzoom\ZoomEvent.java|2415|2424|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2425|2437|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2440|2452|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|2453|2463|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\ZoomEvent.java|2471|2473|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|2484|2488|zoom|field|hms.betterzoom.ZoomEvent|zoom
+      @|hms\betterzoom\ZoomEvent.java|2512|2523|ZoomKeyBind|class|hms.betterzoom.ZoomKeyBind
+      @|hms\betterzoom\ZoomEvent.java|2524|2528|zoom|field|hms.betterzoom.ZoomKeyBind|zoom
+      @|hms\betterzoom\ZoomEvent.java|2529|2538|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|hms\betterzoom\ZoomEvent.java|2549|2553|zoom|field|hms.betterzoom.ZoomEvent|zoom
+      @|hms\betterzoom\ZoomEvent.java|2561|2570|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2571|2583|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2586|2598|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|2599|2609|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\ZoomEvent.java|2617|2623|oldFOV|field|hms.betterzoom.ZoomEvent|oldFOV
+      @|hms\betterzoom\ZoomEvent.java|2629|2656|ObfuscationReflectionHelper|class|net.minecraftforge.fml.common.ObfuscationReflectionHelper
+      @|hms\betterzoom\ZoomEvent.java|2657|2672|setPrivateValue|method|net.minecraftforge.fml.common.ObfuscationReflectionHelper|setPrivateValue|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/String;)V
+      @|hms\betterzoom\ZoomEvent.java|2673|2687|EntityRenderer|class|net.minecraft.client.renderer.EntityRenderer
+      @|hms\betterzoom\ZoomEvent.java|2701|2710|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2711|2723|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2726|2740|entityRenderer|field|net.minecraft.client.Minecraft|entityRenderer
+      @|hms\betterzoom\ZoomEvent.java|2767|2776|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2777|2789|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2792|2806|entityRenderer|field|net.minecraft.client.Minecraft|entityRenderer
+      @|hms\betterzoom\ZoomEvent.java|2807|2821|updateRenderer|method|net.minecraft.client.renderer.EntityRenderer|updateRenderer|()V
+      @|hms\betterzoom\ZoomEvent.java|2833|2842|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ZoomEvent.java|2843|2864|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\ZoomEvent.java|2873|2882|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\ZoomEvent.java|2883|2895|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\ZoomEvent.java|2898|2910|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\ZoomEvent.java|2911|2923|smoothCamera|field|net.minecraft.client.settings.GameSettings|smoothCamera
+      @|hms\betterzoom\ZoomEvent.java|2949|2951|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ZoomEvent.java|2954|2963|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ZoomEvent.java|2964|2980|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+      @|hms\betterzoom\ZoomEvent.java|2991|2997|scroll|field|hms.betterzoom.ZoomEvent|scroll
+      @|hms\betterzoom\ZoomEvent.java|3015|3019|zoom|field|hms.betterzoom.ZoomEvent|zoom
+      @|hms\betterzoom\ZoomEvent.java|3038|3042|publ|field|hms.betterzoom.ZoomEvent|publ
+   Method End: tickUpdate(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+Class End  : hms.betterzoom.ZoomEvent
+endProcessing hms\betterzoom\ZoomEvent.java
+
+processing hms\betterzoom\ZoomKeyBind.java
+@|hms\betterzoom\ZoomKeyBind.java|8|22|hms.betterzoom|package|hms.betterzoom|(file)
+Class Start: hms.betterzoom.ZoomKeyBind
+   @|hms\betterzoom\ZoomKeyBind.java|214|224|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|hms\betterzoom\ZoomKeyBind.java|225|229|zoom|field|hms.betterzoom.ZoomKeyBind|zoom|
+   Method Start: register()V
+      @|hms\betterzoom\ZoomKeyBind.java|252|260|register|method|hms.betterzoom.ZoomKeyBind|register|()V
+      @|hms\betterzoom\ZoomKeyBind.java|267|271|zoom|field|hms.betterzoom.ZoomKeyBind|zoom
+      @|hms\betterzoom\ZoomKeyBind.java|278|288|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+      @|hms\betterzoom\ZoomKeyBind.java|304|312|Keyboard|class|org.lwjgl.input.Keyboard
+      @|hms\betterzoom\ZoomKeyBind.java|313|318|KEY_C|field|org.lwjgl.input.Keyboard|KEY_C
+      @|hms\betterzoom\ZoomKeyBind.java|346|360|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|hms\betterzoom\ZoomKeyBind.java|361|379|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|hms\betterzoom\ZoomKeyBind.java|380|384|zoom|field|hms.betterzoom.ZoomKeyBind|zoom
+   Method End: register()V
+Class End  : hms.betterzoom.ZoomKeyBind
+endProcessing hms\betterzoom\ZoomKeyBind.java
+
+processing hms\betterzoom\gui\Config.java
+@|hms\betterzoom\gui\Config.java|8|26|hms.betterzoom.gui|package|hms.betterzoom.gui|(file)
+Class Start: hms.betterzoom.gui.Config
+   Method Start: initialize(Lnet/minecraft/client/Minecraft;)V
+      @|hms\betterzoom\gui\Config.java|261|271|initialize|method|net.minecraftforge.fml.client.IModGuiFactory|initialize|(Lnet/minecraft/client/Minecraft;)V
+      @|hms\betterzoom\gui\Config.java|272|281|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\Config.java|282|299|minecraftInstance|param|hms.betterzoom.gui.Config|initialize|(Lnet/minecraft/client/Minecraft;)V|minecraftInstance|0
+   Method End: initialize(Lnet/minecraft/client/Minecraft;)V
+   Method Start: mainConfigGuiClass()Ljava/lang/Class;
+      @|hms\betterzoom\gui\Config.java|354|372|mainConfigGuiClass|method|net.minecraftforge.fml.client.IModGuiFactory|mainConfigGuiClass|()Ljava/lang/Class;
+      @|hms\betterzoom\gui\Config.java|343|352|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+      @|hms\betterzoom\gui\Config.java|327|332|Class|class|java.lang.Class
+      @|hms\betterzoom\gui\Config.java|386|397|GuiBzConfig|class|hms.betterzoom.gui.GuiBzConfig
+   Method End: mainConfigGuiClass()Ljava/lang/Class;
+   Method Start: runtimeGuiCategories()Ljava/util/Set;
+      @|hms\betterzoom\gui\Config.java|462|482|runtimeGuiCategories|method|net.minecraftforge.fml.client.IModGuiFactory|runtimeGuiCategories|()Ljava/util/Set;
+      @|hms\betterzoom\gui\Config.java|432|460|RuntimeOptionCategoryElement|class|net.minecraftforge.fml.client.IModGuiFactory.RuntimeOptionCategoryElement
+      @|hms\betterzoom\gui\Config.java|428|431|Set|class|java.util.Set
+   Method End: runtimeGuiCategories()Ljava/util/Set;
+   Method Start: getHandlerFor(Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionCategoryElement;)Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionGuiHandler;
+      @|hms\betterzoom\gui\Config.java|549|562|getHandlerFor|method|net.minecraftforge.fml.client.IModGuiFactory|getHandlerFor|(Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionCategoryElement;)Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionGuiHandler;
+      @|hms\betterzoom\gui\Config.java|525|548|RuntimeOptionGuiHandler|class|net.minecraftforge.fml.client.IModGuiFactory.RuntimeOptionGuiHandler
+      @|hms\betterzoom\gui\Config.java|563|591|RuntimeOptionCategoryElement|class|net.minecraftforge.fml.client.IModGuiFactory.RuntimeOptionCategoryElement
+      @|hms\betterzoom\gui\Config.java|592|599|element|param|hms.betterzoom.gui.Config|getHandlerFor|(Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionCategoryElement;)Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionGuiHandler;|element|0
+   Method End: getHandlerFor(Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionCategoryElement;)Lnet/minecraftforge/fml/client/IModGuiFactory$RuntimeOptionGuiHandler;
+Class End  : hms.betterzoom.gui.Config
+endProcessing hms\betterzoom\gui\Config.java
+
+processing hms\betterzoom\gui\GuiBzConfig.java
+@|hms\betterzoom\gui\GuiBzConfig.java|8|26|hms.betterzoom.gui|package|hms.betterzoom.gui|(file)
+Class Start: hms.betterzoom.gui.GuiBzConfig
+   @|hms\betterzoom\gui\GuiBzConfig.java|548|557|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|hms\betterzoom\gui\GuiBzConfig.java|558|563|close|field|hms.betterzoom.gui.GuiBzConfig|close|
+   @|hms\betterzoom\gui\GuiBzConfig.java|566|575|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|hms\betterzoom\gui\GuiBzConfig.java|576|582|toggle|field|hms.betterzoom.gui.GuiBzConfig|toggle|
+   @|hms\betterzoom\gui\GuiBzConfig.java|585|594|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|hms\betterzoom\gui\GuiBzConfig.java|595|607|toggleSmooth|field|hms.betterzoom.gui.GuiBzConfig|toggleSmooth|
+   @|hms\betterzoom\gui\GuiBzConfig.java|610|619|GuiSlider|class|net.minecraftforge.fml.client.config.GuiSlider
+   @|hms\betterzoom\gui\GuiBzConfig.java|620|629|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl|
+   @|hms\betterzoom\gui\GuiBzConfig.java|632|641|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|hms\betterzoom\gui\GuiBzConfig.java|642|648|parent|field|hms.betterzoom.gui.GuiBzConfig|parent|
+   Method Start: GuiBzConfig(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|659|670|GuiBzConfig|method|hms.betterzoom.gui.GuiBzConfig|GuiBzConfig|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|671|680|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+      @|hms\betterzoom\gui\GuiBzConfig.java|681|687|parent|param|hms.betterzoom.gui.GuiBzConfig|GuiBzConfig|(Lnet/minecraft/client/gui/GuiScreen;)V|parent|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|698|704|parent|field|hms.betterzoom.gui.GuiBzConfig|parent
+      @|hms\betterzoom\gui\GuiBzConfig.java|707|713|parent|param|hms.betterzoom.gui.GuiBzConfig|GuiBzConfig|(Lnet/minecraft/client/gui/GuiScreen;)V|parent|0
+   Method End: GuiBzConfig(Lnet/minecraft/client/gui/GuiScreen;)V
+   Method Start: initGui()V
+      @|hms\betterzoom\gui\GuiBzConfig.java|743|750|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|hms\betterzoom\gui\GuiBzConfig.java|763|770|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|hms\betterzoom\gui\GuiBzConfig.java|776|782|toggle|field|hms.betterzoom.gui.GuiBzConfig|toggle
+      @|hms\betterzoom\gui\GuiBzConfig.java|789|798|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|hms\betterzoom\gui\GuiBzConfig.java|802|807|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\GuiBzConfig.java|834|842|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\GuiBzConfig.java|843|862|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiBzConfig.java|863|872|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|873|885|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\gui\GuiBzConfig.java|912|924|toggleSmooth|field|hms.betterzoom.gui.GuiBzConfig|toggleSmooth
+      @|hms\betterzoom\gui\GuiBzConfig.java|931|940|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|hms\betterzoom\gui\GuiBzConfig.java|944|949|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\GuiBzConfig.java|976|984|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\GuiBzConfig.java|985|1004|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiBzConfig.java|1005|1014|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1015|1036|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\gui\GuiBzConfig.java|1063|1068|close|field|hms.betterzoom.gui.GuiBzConfig|close
+      @|hms\betterzoom\gui\GuiBzConfig.java|1075|1084|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|hms\betterzoom\gui\GuiBzConfig.java|1088|1093|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\GuiBzConfig.java|1104|1110|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|hms\betterzoom\gui\GuiBzConfig.java|1146|1155|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl
+      @|hms\betterzoom\gui\GuiBzConfig.java|1162|1171|GuiSlider|class|net.minecraftforge.fml.client.config.GuiSlider
+      @|hms\betterzoom\gui\GuiBzConfig.java|1175|1180|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\GuiBzConfig.java|1245|1254|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1255|1271|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+      @|hms\betterzoom\gui\GuiBzConfig.java|1290|1300|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\GuiBzConfig.java|1301|1304|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\GuiBzConfig.java|1305|1311|toggle|field|hms.betterzoom.gui.GuiBzConfig|toggle
+      @|hms\betterzoom\gui\GuiBzConfig.java|1316|1326|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\GuiBzConfig.java|1327|1330|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\GuiBzConfig.java|1331|1343|toggleSmooth|field|hms.betterzoom.gui.GuiBzConfig|toggleSmooth
+      @|hms\betterzoom\gui\GuiBzConfig.java|1348|1358|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\GuiBzConfig.java|1359|1362|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\GuiBzConfig.java|1363|1372|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl
+      @|hms\betterzoom\gui\GuiBzConfig.java|1377|1387|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\GuiBzConfig.java|1388|1391|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\GuiBzConfig.java|1392|1397|close|field|hms.betterzoom.gui.GuiBzConfig|close
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1431|1446|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1472|1483|IOException|class|java.io.IOException
+      @|hms\betterzoom\gui\GuiBzConfig.java|1447|1456|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|hms\betterzoom\gui\GuiBzConfig.java|1457|1463|button|param|hms.betterzoom.gui.GuiBzConfig|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|1492|1498|button|param|hms.betterzoom.gui.GuiBzConfig|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|1502|1507|close|field|hms.betterzoom.gui.GuiBzConfig|close
+      @|hms\betterzoom\gui\GuiBzConfig.java|1514|1523|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1524|1543|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1549|1558|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl
+      @|hms\betterzoom\gui\GuiBzConfig.java|1559|1570|getValueInt|method|net.minecraftforge.fml.client.config.GuiSlider|getValueInt|()I
+      @|hms\betterzoom\gui\GuiBzConfig.java|1578|1592|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|hms\betterzoom\gui\GuiBzConfig.java|1593|1602|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|hms\betterzoom\gui\GuiBzConfig.java|1603|1611|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1632|1638|button|param|hms.betterzoom.gui.GuiBzConfig|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|1642|1648|toggle|field|hms.betterzoom.gui.GuiBzConfig|toggle
+      @|hms\betterzoom\gui\GuiBzConfig.java|1655|1664|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1665|1675|setToggled|method|hms.betterzoom.ref.Reference|setToggled|(Z)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1677|1686|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1687|1699|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\gui\GuiBzConfig.java|1715|1721|button|param|hms.betterzoom.gui.GuiBzConfig|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|1725|1737|toggleSmooth|field|hms.betterzoom.gui.GuiBzConfig|toggleSmooth
+      @|hms\betterzoom\gui\GuiBzConfig.java|1744|1753|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1754|1767|setSmoothZoom|method|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1769|1778|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1779|1800|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\gui\GuiBzConfig.java|1816|1822|button|param|hms.betterzoom.gui.GuiBzConfig|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|1826|1835|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl
+      @|hms\betterzoom\gui\GuiBzConfig.java|1842|1851|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|1852|1871|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1872|1881|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl
+      @|hms\betterzoom\gui\GuiBzConfig.java|1882|1893|getValueInt|method|net.minecraftforge.fml.client.config.GuiSlider|getValueInt|()I
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: keyTyped(CI)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1933|1941|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|1978|1989|IOException|class|java.io.IOException
+      @|hms\betterzoom\gui\GuiBzConfig.java|1947|1956|typedChar|param|hms.betterzoom.gui.GuiBzConfig|keyTyped|(CI)V|typedChar|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|1962|1969|keyCode|param|hms.betterzoom.gui.GuiBzConfig|keyTyped|(CI)V|keyCode|1
+      @|hms\betterzoom\gui\GuiBzConfig.java|1998|2005|keyCode|param|hms.betterzoom.gui.GuiBzConfig|keyTyped|(CI)V|keyCode|1
+      @|hms\betterzoom\gui\GuiBzConfig.java|2009|2017|Keyboard|class|org.lwjgl.input.Keyboard
+      @|hms\betterzoom\gui\GuiBzConfig.java|2018|2028|KEY_ESCAPE|field|org.lwjgl.input.Keyboard|KEY_ESCAPE
+      @|hms\betterzoom\gui\GuiBzConfig.java|2035|2044|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|2045|2064|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2070|2079|defaultZl|field|hms.betterzoom.gui.GuiBzConfig|defaultZl
+      @|hms\betterzoom\gui\GuiBzConfig.java|2080|2091|getValueInt|method|net.minecraftforge.fml.client.config.GuiSlider|getValueInt|()I
+      @|hms\betterzoom\gui\GuiBzConfig.java|2099|2113|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|hms\betterzoom\gui\GuiBzConfig.java|2114|2123|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|hms\betterzoom\gui\GuiBzConfig.java|2124|2132|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2152|2160|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2161|2170|typedChar|param|hms.betterzoom.gui.GuiBzConfig|keyTyped|(CI)V|typedChar|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|2172|2179|keyCode|param|hms.betterzoom.gui.GuiBzConfig|keyTyped|(CI)V|keyCode|1
+   Method End: keyTyped(CI)V
+   Method Start: drawScreen(IIF)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2210|2220|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2225|2231|mouseX|param|hms.betterzoom.gui.GuiBzConfig|drawScreen|(IIF)V|mouseX|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|2237|2243|mouseY|param|hms.betterzoom.gui.GuiBzConfig|drawScreen|(IIF)V|mouseY|1
+      @|hms\betterzoom\gui\GuiBzConfig.java|2251|2263|partialTicks|param|hms.betterzoom.gui.GuiBzConfig|drawScreen|(IIF)V|partialTicks|2
+      @|hms\betterzoom\gui\GuiBzConfig.java|2280|2294|drawBackground|method|net.minecraft.client.gui.GuiScreen|drawBackground|(I)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2306|2316|drawString|method|net.minecraft.client.gui.Gui|drawString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2317|2332|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|hms\betterzoom\gui\GuiBzConfig.java|2349|2354|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\GuiBzConfig.java|2396|2406|drawString|method|net.minecraft.client.gui.Gui|drawString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2407|2422|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|hms\betterzoom\gui\GuiBzConfig.java|2440|2445|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\GuiBzConfig.java|2482|2488|toggle|field|hms.betterzoom.gui.GuiBzConfig|toggle
+      @|hms\betterzoom\gui\GuiBzConfig.java|2489|2502|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\GuiBzConfig.java|2505|2513|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\GuiBzConfig.java|2514|2533|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiBzConfig.java|2534|2543|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|2544|2556|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\gui\GuiBzConfig.java|2574|2586|toggleSmooth|field|hms.betterzoom.gui.GuiBzConfig|toggleSmooth
+      @|hms\betterzoom\gui\GuiBzConfig.java|2587|2600|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\GuiBzConfig.java|2603|2611|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\GuiBzConfig.java|2612|2631|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiBzConfig.java|2632|2641|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\GuiBzConfig.java|2642|2663|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\gui\GuiBzConfig.java|2687|2697|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2698|2704|mouseX|param|hms.betterzoom.gui.GuiBzConfig|drawScreen|(IIF)V|mouseX|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|2706|2712|mouseY|param|hms.betterzoom.gui.GuiBzConfig|drawScreen|(IIF)V|mouseY|1
+      @|hms\betterzoom\gui\GuiBzConfig.java|2714|2726|partialTicks|param|hms.betterzoom.gui.GuiBzConfig|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: mouseClicked(III)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2760|2772|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2821|2832|IOException|class|java.io.IOException
+      @|hms\betterzoom\gui\GuiBzConfig.java|2777|2783|mouseX|param|hms.betterzoom.gui.GuiBzConfig|mouseClicked|(III)V|mouseX|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|2789|2795|mouseY|param|hms.betterzoom.gui.GuiBzConfig|mouseClicked|(III)V|mouseY|1
+      @|hms\betterzoom\gui\GuiBzConfig.java|2801|2812|mouseButton|param|hms.betterzoom.gui.GuiBzConfig|mouseClicked|(III)V|mouseButton|2
+      @|hms\betterzoom\gui\GuiBzConfig.java|2843|2855|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2856|2862|mouseX|param|hms.betterzoom.gui.GuiBzConfig|mouseClicked|(III)V|mouseX|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|2864|2870|mouseY|param|hms.betterzoom.gui.GuiBzConfig|mouseClicked|(III)V|mouseY|1
+      @|hms\betterzoom\gui\GuiBzConfig.java|2872|2883|mouseButton|param|hms.betterzoom.gui.GuiBzConfig|mouseClicked|(III)V|mouseButton|2
+   Method End: mouseClicked(III)V
+   Method Start: doesGuiPauseGame()Z
+      @|hms\betterzoom\gui\GuiBzConfig.java|2917|2933|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+   Method Start: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2987|2993|onTick|method|hms.betterzoom.gui.GuiBzConfig|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|2994|3009|ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|hms\betterzoom\gui\GuiBzConfig.java|3010|3011|e|param|hms.betterzoom.gui.GuiBzConfig|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|e|0
+      @|hms\betterzoom\gui\GuiBzConfig.java|3022|3024|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|hms\betterzoom\gui\GuiBzConfig.java|3025|3041|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|hms\betterzoom\gui\GuiBzConfig.java|3047|3053|parent|field|hms.betterzoom.gui.GuiBzConfig|parent
+      @|hms\betterzoom\gui\GuiBzConfig.java|3058|3072|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|hms\betterzoom\gui\GuiBzConfig.java|3073|3082|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|hms\betterzoom\gui\GuiBzConfig.java|3083|3093|unregister|method|net.minecraftforge.fml.common.eventhandler.EventBus|unregister|(Ljava/lang/Object;)V
+   Method End: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+Class End  : hms.betterzoom.gui.GuiBzConfig
+endProcessing hms\betterzoom\gui\GuiBzConfig.java
+
+processing hms\betterzoom\gui\GuiModernButton.java
+@|hms\betterzoom\gui\GuiModernButton.java|8|26|hms.betterzoom.gui|package|hms.betterzoom.gui|(file)
+Class Start: hms.betterzoom.gui.GuiModernButton
+   @|hms\betterzoom\gui\GuiModernButton.java|449|465|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|hms\betterzoom\gui\GuiModernButton.java|466|480|buttonTextures|field|hms.betterzoom.gui.GuiModernButton|buttonTextures|
+   @|hms\betterzoom\gui\GuiModernButton.java|487|503|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   Method Start: GuiModernButton(IIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButton.java|546|561|GuiModernButton|method|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButton.java|566|574|buttonId|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|buttonId|0
+      @|hms\betterzoom\gui\GuiModernButton.java|580|581|x|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|x|1
+      @|hms\betterzoom\gui\GuiModernButton.java|587|588|y|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|y|2
+      @|hms\betterzoom\gui\GuiModernButton.java|590|596|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernButton.java|597|607|buttonText|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|buttonText|3
+      @|hms\betterzoom\gui\GuiModernButton.java|619|627|buttonId|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|buttonId|0
+      @|hms\betterzoom\gui\GuiModernButton.java|629|630|x|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|x|1
+      @|hms\betterzoom\gui\GuiModernButton.java|632|633|y|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|y|2
+      @|hms\betterzoom\gui\GuiModernButton.java|644|654|buttonText|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIILjava/lang/String;)V|buttonText|3
+   Method End: GuiModernButton(IIILjava/lang/String;)V
+   Method Start: GuiModernButton(IIIIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButton.java|669|684|GuiModernButton|method|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButton.java|689|697|buttonId|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|buttonId|0
+      @|hms\betterzoom\gui\GuiModernButton.java|703|704|x|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|x|1
+      @|hms\betterzoom\gui\GuiModernButton.java|710|711|y|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|y|2
+      @|hms\betterzoom\gui\GuiModernButton.java|717|724|widthIn|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|widthIn|3
+      @|hms\betterzoom\gui\GuiModernButton.java|730|738|heightIn|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|heightIn|4
+      @|hms\betterzoom\gui\GuiModernButton.java|740|746|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernButton.java|747|757|buttonText|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|buttonText|5
+      @|hms\betterzoom\gui\GuiModernButton.java|769|777|buttonId|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|buttonId|0
+      @|hms\betterzoom\gui\GuiModernButton.java|779|780|x|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|x|1
+      @|hms\betterzoom\gui\GuiModernButton.java|782|783|y|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|y|2
+      @|hms\betterzoom\gui\GuiModernButton.java|785|792|widthIn|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|widthIn|3
+      @|hms\betterzoom\gui\GuiModernButton.java|794|802|heightIn|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|heightIn|4
+      @|hms\betterzoom\gui\GuiModernButton.java|804|814|buttonText|param|hms.betterzoom.gui.GuiModernButton|GuiModernButton|(IIIIILjava/lang/String;)V|buttonText|5
+   Method End: GuiModernButton(IIIIILjava/lang/String;)V
+   Method Start: drawButton(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernButton.java|881|891|drawButton|method|net.minecraft.client.gui.GuiButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernButton.java|892|901|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\GuiModernButton.java|902|904|mc|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButton.java|910|916|mouseX|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButton.java|922|928|mouseY|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButton.java|943|950|visible|field|net.minecraft.client.gui.GuiButton|visible
+      @|hms\betterzoom\gui\GuiModernButton.java|957|969|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|hms\betterzoom\gui\GuiModernButton.java|985|987|mc|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButton.java|988|1003|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|hms\betterzoom\gui\GuiModernButton.java|1008|1010|mc|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButton.java|1011|1028|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
+      @|hms\betterzoom\gui\GuiModernButton.java|1031|1042|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1043|1057|buttonTextures|field|hms.betterzoom.gui.GuiModernButton|buttonTextures
+      @|hms\betterzoom\gui\GuiModernButton.java|1063|1077|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|hms\betterzoom\gui\GuiModernButton.java|1078|1083|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1117|1124|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|hms\betterzoom\gui\GuiModernButton.java|1127|1133|mouseX|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButton.java|1142|1151|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1155|1161|mouseY|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButton.java|1170|1179|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1183|1189|mouseX|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButton.java|1197|1206|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1214|1219|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButton.java|1228|1234|mouseY|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButton.java|1242|1251|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1259|1265|height|field|net.minecraft.client.gui.GuiButton|height
+      @|hms\betterzoom\gui\GuiModernButton.java|1283|1296|getHoverState|method|net.minecraft.client.gui.GuiButton|getHoverState|(Z)I
+      @|hms\betterzoom\gui\GuiModernButton.java|1302|1309|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|hms\betterzoom\gui\GuiModernButton.java|1315|1329|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|hms\betterzoom\gui\GuiModernButton.java|1330|1341|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
+      @|hms\betterzoom\gui\GuiModernButton.java|1348|1362|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|hms\betterzoom\gui\GuiModernButton.java|1363|1383|tryBlendFuncSeparate|method|net.minecraft.client.renderer.GlStateManager|tryBlendFuncSeparate|(IIII)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1404|1418|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|hms\betterzoom\gui\GuiModernButton.java|1419|1428|blendFunc|method|net.minecraft.client.renderer.GlStateManager|blendFunc|(II)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1448|1469|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1475|1484|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1491|1500|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1523|1528|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButton.java|1539|1545|height|field|net.minecraft.client.gui.GuiButton|height
+      @|hms\betterzoom\gui\GuiModernButton.java|1556|1577|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1583|1592|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1600|1605|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButton.java|1616|1625|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|1638|1643|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButton.java|1672|1677|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButton.java|1688|1694|height|field|net.minecraft.client.gui.GuiButton|height
+      @|hms\betterzoom\gui\GuiModernButton.java|1705|1717|mouseDragged|method|net.minecraft.client.gui.GuiButton|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1718|1720|mc|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButton.java|1722|1728|mouseX|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButton.java|1730|1736|mouseY|param|hms.betterzoom.gui.GuiModernButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButton.java|1768|1782|packedFGColour|field|net.minecraft.client.gui.GuiButton|packedFGColour
+      @|hms\betterzoom\gui\GuiModernButton.java|1799|1813|packedFGColour|field|net.minecraft.client.gui.GuiButton|packedFGColour
+      @|hms\betterzoom\gui\GuiModernButton.java|1835|1842|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|hms\betterzoom\gui\GuiModernButton.java|1883|1890|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|hms\betterzoom\gui\GuiModernButton.java|1926|1944|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|hms\betterzoom\gui\GuiModernButton.java|1964|1977|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\GuiModernButton.java|1984|1993|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|2001|2006|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButton.java|2022|2031|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButton.java|2040|2046|height|field|net.minecraft.client.gui.GuiButton|height
+   Method End: drawButton(Lnet/minecraft/client/Minecraft;II)V
+Class End  : hms.betterzoom.gui.GuiModernButton
+endProcessing hms\betterzoom\gui\GuiModernButton.java
+
+processing hms\betterzoom\gui\GuiModernButtonExt.java
+@|hms\betterzoom\gui\GuiModernButtonExt.java|393|411|hms.betterzoom.gui|package|hms.betterzoom.gui|(file)
+Class Start: hms.betterzoom.gui.GuiModernButtonExt
+   Method Start: GuiModernButtonExt(IIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1047|1065|GuiModernButtonExt|method|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1070|1072|id|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|id|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1078|1082|xPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1088|1092|yPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1094|1100|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1101|1114|displayString|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|displayString|3
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1126|1128|id|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|id|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1130|1134|xPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1136|1140|yPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1142|1155|displayString|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIILjava/lang/String;)V|displayString|3
+   Method End: GuiModernButtonExt(IIILjava/lang/String;)V
+   Method Start: GuiModernButtonExt(IIIIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1170|1188|GuiModernButtonExt|method|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1193|1195|id|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|id|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1201|1205|xPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1211|1215|yPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1221|1226|width|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|width|3
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1232|1238|height|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|height|4
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1240|1246|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1247|1260|displayString|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|displayString|5
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1272|1274|id|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|id|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1276|1280|xPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1282|1286|yPos|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1288|1293|width|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|width|3
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1295|1301|height|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|height|4
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1303|1316|displayString|param|hms.betterzoom.gui.GuiModernButtonExt|GuiModernButtonExt|(IIIIILjava/lang/String;)V|displayString|5
+   Method End: GuiModernButtonExt(IIIIILjava/lang/String;)V
+   Method Start: drawButton(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1441|1451|drawButton|method|net.minecraft.client.gui.GuiButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1452|1461|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1462|1464|mc|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1470|1476|mouseX|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1482|1488|mouseY|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1503|1510|visible|field|net.minecraft.client.gui.GuiButton|visible
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1522|1529|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1532|1538|mouseX|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1547|1556|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1560|1566|mouseY|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1575|1584|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1588|1594|mouseX|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1602|1611|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1619|1624|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1633|1639|mouseY|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1647|1656|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1664|1670|height|field|net.minecraft.client.gui.GuiButton|height
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1688|1701|getHoverState|method|net.minecraft.client.gui.GuiButton|getHoverState|(Z)I
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1707|1714|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1720|1728|GuiUtils|class|net.minecraftforge.fml.client.config.GuiUtils
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1729|1754|drawContinuousTexturedBox|method|net.minecraftforge.fml.client.config.GuiUtils|drawContinuousTexturedBox|(Lnet/minecraft/util/ResourceLocation;IIIIIIIIIIIIF)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1755|1769|buttonTextures|field|hms.betterzoom.gui.GuiModernButton|buttonTextures
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1776|1785|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1792|1801|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1829|1834|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1841|1847|height|field|net.minecraft.client.gui.GuiButton|height
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1875|1881|zLevel|field|net.minecraft.client.gui.Gui|zLevel
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1892|1904|mouseDragged|method|net.minecraft.client.gui.GuiButton|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1905|1907|mc|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1909|1915|mouseX|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1917|1923|mouseY|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1959|1973|packedFGColour|field|net.minecraft.client.gui.GuiButton|packedFGColour
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|1994|2008|packedFGColour|field|net.minecraft.client.gui.GuiButton|packedFGColour
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2030|2037|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2082|2089|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2124|2130|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2149|2162|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2182|2184|mc|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2185|2200|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2201|2215|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2252|2254|mc|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2255|2270|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2271|2285|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2313|2318|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2369|2371|mc|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2372|2387|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2388|2405|trimStringToWidth|method|net.minecraft.client.gui.FontRenderer|trimStringToWidth|(Ljava/lang/String;I)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2418|2423|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2445|2449|trim|method|java.lang.String|trim|()Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2470|2488|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2489|2491|mc|param|hms.betterzoom.gui.GuiModernButtonExt|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2492|2507|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2526|2535|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2543|2548|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2564|2573|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernButtonExt.java|2582|2588|height|field|net.minecraft.client.gui.GuiButton|height
+   Method End: drawButton(Lnet/minecraft/client/Minecraft;II)V
+Class End  : hms.betterzoom.gui.GuiModernButtonExt
+endProcessing hms\betterzoom\gui\GuiModernButtonExt.java
+
+processing hms\betterzoom\gui\GuiModernSlider.java
+@|hms\betterzoom\gui\GuiModernSlider.java|8|26|hms.betterzoom.gui|package|hms.betterzoom.gui|(file)
+Class Start: hms.betterzoom.gui.GuiModernSlider
+   @|hms\betterzoom\gui\GuiModernSlider.java|332|343|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue|
+   @|hms\betterzoom\gui\GuiModernSlider.java|361|367|String|class|java.lang.String
+   @|hms\betterzoom\gui\GuiModernSlider.java|368|378|dispString|field|hms.betterzoom.gui.GuiModernSlider|dispString|
+   @|hms\betterzoom\gui\GuiModernSlider.java|448|456|dragging|field|hms.betterzoom.gui.GuiModernSlider|dragging|
+   @|hms\betterzoom\gui\GuiModernSlider.java|482|493|showDecimal|field|hms.betterzoom.gui.GuiModernSlider|showDecimal|
+   @|hms\betterzoom\gui\GuiModernSlider.java|518|526|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue|
+   @|hms\betterzoom\gui\GuiModernSlider.java|550|558|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue|
+   @|hms\betterzoom\gui\GuiModernSlider.java|579|588|precision|field|hms.betterzoom.gui.GuiModernSlider|precision|
+   @|hms\betterzoom\gui\GuiModernSlider.java|603|610|ISlider|class|hms.betterzoom.gui.GuiModernSlider.ISlider
+   @|hms\betterzoom\gui\GuiModernSlider.java|611|617|parent|field|hms.betterzoom.gui.GuiModernSlider|parent|
+   @|hms\betterzoom\gui\GuiModernSlider.java|635|641|String|class|java.lang.String
+   @|hms\betterzoom\gui\GuiModernSlider.java|642|648|suffix|field|hms.betterzoom.gui.GuiModernSlider|suffix|
+   @|hms\betterzoom\gui\GuiModernSlider.java|672|682|drawString|field|hms.betterzoom.gui.GuiModernSlider|drawString|
+   Method Start: GuiModernSlider(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|700|715|GuiModernSlider|method|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|720|722|id|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|id|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|728|732|xPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|738|742|yPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|748|753|width|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|width|3
+      @|hms\betterzoom\gui\GuiModernSlider.java|759|765|height|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|height|4
+      @|hms\betterzoom\gui\GuiModernSlider.java|767|773|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|774|780|prefix|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|prefix|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|782|788|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|789|792|suf|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|suf|6
+      @|hms\betterzoom\gui\GuiModernSlider.java|801|807|minVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|minVal|7
+      @|hms\betterzoom\gui\GuiModernSlider.java|819|825|maxVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|maxVal|8
+      @|hms\betterzoom\gui\GuiModernSlider.java|834|844|currentVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|currentVal|9
+      @|hms\betterzoom\gui\GuiModernSlider.java|854|861|showDec|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|showDec|10
+      @|hms\betterzoom\gui\GuiModernSlider.java|871|878|drawStr|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|drawStr|11
+      @|hms\betterzoom\gui\GuiModernSlider.java|889|891|id|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|id|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|893|897|xPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|899|903|yPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|905|910|width|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|width|3
+      @|hms\betterzoom\gui\GuiModernSlider.java|912|918|height|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|height|4
+      @|hms\betterzoom\gui\GuiModernSlider.java|920|926|prefix|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|prefix|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|928|931|suf|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|suf|6
+      @|hms\betterzoom\gui\GuiModernSlider.java|933|939|minVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|minVal|7
+      @|hms\betterzoom\gui\GuiModernSlider.java|941|947|maxVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|maxVal|8
+      @|hms\betterzoom\gui\GuiModernSlider.java|949|959|currentVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|currentVal|9
+      @|hms\betterzoom\gui\GuiModernSlider.java|961|968|showDec|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|showDec|10
+      @|hms\betterzoom\gui\GuiModernSlider.java|970|977|drawStr|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V|drawStr|11
+   Method End: GuiModernSlider(IIIIILjava/lang/String;Ljava/lang/String;DDDZZ)V
+   Method Start: GuiModernSlider(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|998|1013|GuiModernSlider|method|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|1018|1020|id|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|id|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|1026|1030|xPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|1036|1040|yPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|1046|1051|width|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|width|3
+      @|hms\betterzoom\gui\GuiModernSlider.java|1057|1063|height|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|height|4
+      @|hms\betterzoom\gui\GuiModernSlider.java|1065|1071|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|1072|1078|prefix|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|prefix|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|1080|1086|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|1087|1090|suf|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|suf|6
+      @|hms\betterzoom\gui\GuiModernSlider.java|1099|1105|minVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|minVal|7
+      @|hms\betterzoom\gui\GuiModernSlider.java|1117|1123|maxVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|maxVal|8
+      @|hms\betterzoom\gui\GuiModernSlider.java|1132|1142|currentVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|currentVal|9
+      @|hms\betterzoom\gui\GuiModernSlider.java|1152|1159|showDec|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|showDec|10
+      @|hms\betterzoom\gui\GuiModernSlider.java|1169|1176|drawStr|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|drawStr|11
+      @|hms\betterzoom\gui\GuiModernSlider.java|1178|1185|ISlider|class|hms.betterzoom.gui.GuiModernSlider.ISlider
+      @|hms\betterzoom\gui\GuiModernSlider.java|1186|1189|par|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|par|12
+      @|hms\betterzoom\gui\GuiModernSlider.java|1201|1203|id|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|id|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|1205|1209|xPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|1211|1215|yPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|1217|1222|width|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|width|3
+      @|hms\betterzoom\gui\GuiModernSlider.java|1224|1230|height|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|height|4
+      @|hms\betterzoom\gui\GuiModernSlider.java|1232|1238|prefix|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|prefix|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|1243|1251|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1254|1260|minVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|minVal|7
+      @|hms\betterzoom\gui\GuiModernSlider.java|1264|1272|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1275|1281|maxVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|maxVal|8
+      @|hms\betterzoom\gui\GuiModernSlider.java|1285|1296|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1300|1310|currentVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|currentVal|9
+      @|hms\betterzoom\gui\GuiModernSlider.java|1313|1321|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1326|1334|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1337|1345|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1350|1360|dispString|field|hms.betterzoom.gui.GuiModernSlider|dispString
+      @|hms\betterzoom\gui\GuiModernSlider.java|1363|1369|prefix|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|prefix|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|1373|1379|parent|field|hms.betterzoom.gui.GuiModernSlider|parent
+      @|hms\betterzoom\gui\GuiModernSlider.java|1382|1385|par|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|par|12
+      @|hms\betterzoom\gui\GuiModernSlider.java|1389|1395|suffix|field|hms.betterzoom.gui.GuiModernSlider|suffix
+      @|hms\betterzoom\gui\GuiModernSlider.java|1398|1401|suf|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|suf|6
+      @|hms\betterzoom\gui\GuiModernSlider.java|1405|1416|showDecimal|field|hms.betterzoom.gui.GuiModernSlider|showDecimal
+      @|hms\betterzoom\gui\GuiModernSlider.java|1419|1426|showDec|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|showDec|10
+      @|hms\betterzoom\gui\GuiModernSlider.java|1430|1436|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|1449|1460|showDecimal|field|hms.betterzoom.gui.GuiModernSlider|showDecimal
+      @|hms\betterzoom\gui\GuiModernSlider.java|1473|1479|Double|class|java.lang.Double
+      @|hms\betterzoom\gui\GuiModernSlider.java|1480|1488|toString|method|java.lang.Double|toString|(D)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|1489|1500|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1504|1512|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1515|1523|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1527|1535|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1541|1550|precision|field|hms.betterzoom.gui.GuiModernSlider|precision
+      @|hms\betterzoom\gui\GuiModernSlider.java|1553|1557|Math|class|java.lang.Math
+      @|hms\betterzoom\gui\GuiModernSlider.java|1558|1561|min|method|java.lang.Math|min|(II)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|1566|1575|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|1580|1587|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|1598|1604|length|method|java.lang.CharSequence|length|()I
+      @|hms\betterzoom\gui\GuiModernSlider.java|1632|1639|Integer|class|java.lang.Integer
+      @|hms\betterzoom\gui\GuiModernSlider.java|1640|1648|toString|method|java.lang.Integer|toString|(I)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|1655|1659|Math|class|java.lang.Math
+      @|hms\betterzoom\gui\GuiModernSlider.java|1660|1665|round|method|java.lang.Math|round|(D)J
+      @|hms\betterzoom\gui\GuiModernSlider.java|1666|1677|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1681|1689|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1692|1700|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1704|1712|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|1719|1728|precision|field|hms.betterzoom.gui.GuiModernSlider|precision
+      @|hms\betterzoom\gui\GuiModernSlider.java|1741|1754|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\GuiModernSlider.java|1757|1767|dispString|field|hms.betterzoom.gui.GuiModernSlider|dispString
+      @|hms\betterzoom\gui\GuiModernSlider.java|1776|1782|suffix|field|hms.betterzoom.gui.GuiModernSlider|suffix
+      @|hms\betterzoom\gui\GuiModernSlider.java|1787|1797|drawString|field|hms.betterzoom.gui.GuiModernSlider|drawString
+      @|hms\betterzoom\gui\GuiModernSlider.java|1800|1807|drawStr|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|drawStr|11
+      @|hms\betterzoom\gui\GuiModernSlider.java|1816|1826|drawString|field|hms.betterzoom.gui.GuiModernSlider|drawString
+      @|hms\betterzoom\gui\GuiModernSlider.java|1833|1846|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+   Method End: GuiModernSlider(IIIIILjava/lang/String;Ljava/lang/String;DDDZZLhms/betterzoom/gui/GuiModernSlider$ISlider;)V
+   Method Start: GuiModernSlider(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|1869|1884|GuiModernSlider|method|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|1889|1891|id|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|id|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|1897|1901|xPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|1907|1911|yPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|1913|1919|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|1920|1930|displayStr|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|displayStr|3
+      @|hms\betterzoom\gui\GuiModernSlider.java|1939|1945|minVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|minVal|4
+      @|hms\betterzoom\gui\GuiModernSlider.java|1954|1960|maxVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|maxVal|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|1972|1982|currentVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|currentVal|6
+      @|hms\betterzoom\gui\GuiModernSlider.java|1984|1991|ISlider|class|hms.betterzoom.gui.GuiModernSlider.ISlider
+      @|hms\betterzoom\gui\GuiModernSlider.java|1992|1995|par|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|par|7
+      @|hms\betterzoom\gui\GuiModernSlider.java|2006|2008|id|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|id|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|2010|2014|xPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|xPos|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|2016|2020|yPos|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|yPos|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|2031|2041|displayStr|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|displayStr|3
+      @|hms\betterzoom\gui\GuiModernSlider.java|2047|2053|minVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|minVal|4
+      @|hms\betterzoom\gui\GuiModernSlider.java|2055|2061|maxVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|maxVal|5
+      @|hms\betterzoom\gui\GuiModernSlider.java|2063|2073|currentVal|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|currentVal|6
+      @|hms\betterzoom\gui\GuiModernSlider.java|2087|2090|par|param|hms.betterzoom.gui.GuiModernSlider|GuiModernSlider|(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V|par|7
+   Method End: GuiModernSlider(IIILjava/lang/String;DDDLhms/betterzoom/gui/GuiModernSlider$ISlider;)V
+   Method Start: getHoverState(Z)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|2410|2423|getHoverState|method|net.minecraft.client.gui.GuiButton|getHoverState|(Z)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|2432|2436|par1|param|hms.betterzoom.gui.GuiModernSlider|getHoverState|(Z)I|par1|0
+   Method End: getHoverState(Z)I
+   Method Start: mouseDragged(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|2711|2723|mouseDragged|method|net.minecraft.client.gui.GuiButton|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|2724|2733|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\GuiModernSlider.java|2734|2747|par1Minecraft|param|hms.betterzoom.gui.GuiModernSlider|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V|par1Minecraft|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|2753|2757|par2|param|hms.betterzoom.gui.GuiModernSlider|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V|par2|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|2763|2767|par3|param|hms.betterzoom.gui.GuiModernSlider|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V|par3|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|2782|2789|visible|field|net.minecraft.client.gui.GuiButton|visible
+      @|hms\betterzoom\gui\GuiModernSlider.java|2805|2813|dragging|field|hms.betterzoom.gui.GuiModernSlider|dragging
+      @|hms\betterzoom\gui\GuiModernSlider.java|2826|2837|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|2841|2845|par2|param|hms.betterzoom.gui.GuiModernSlider|mouseDragged|(Lnet/minecraft/client/Minecraft;II)V|par2|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|2854|2863|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernSlider.java|2886|2891|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernSlider.java|2902|2914|updateSlider|method|hms.betterzoom.gui.GuiModernSlider|updateSlider|()V
+      @|hms\betterzoom\gui\GuiModernSlider.java|2927|2941|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|hms\betterzoom\gui\GuiModernSlider.java|2942|2947|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|2981|3002|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|3008|3017|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernSlider.java|3032|3043|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|3060|3065|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernSlider.java|3083|3092|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|hms\betterzoom\gui\GuiModernSlider.java|3117|3138|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|3144|3153|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernSlider.java|3168|3179|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|3196|3201|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernSlider.java|3223|3232|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+   Method End: mouseDragged(Lnet/minecraft/client/Minecraft;II)V
+   Method Start: mousePressed(Lnet/minecraft/client/Minecraft;II)Z
+      @|hms\betterzoom\gui\GuiModernSlider.java|3554|3566|mousePressed|method|net.minecraft.client.gui.GuiButton|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z
+      @|hms\betterzoom\gui\GuiModernSlider.java|3567|3576|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\GuiModernSlider.java|3577|3590|par1Minecraft|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par1Minecraft|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|3596|3600|par2|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par2|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|3606|3610|par3|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par3|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|3626|3638|mousePressed|method|net.minecraft.client.gui.GuiButton|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z
+      @|hms\betterzoom\gui\GuiModernSlider.java|3639|3652|par1Minecraft|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par1Minecraft|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|3654|3658|par2|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par2|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|3660|3664|par3|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par3|2
+      @|hms\betterzoom\gui\GuiModernSlider.java|3677|3688|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|3700|3704|par2|param|hms.betterzoom.gui.GuiModernSlider|mousePressed|(Lnet/minecraft/client/Minecraft;II)Z|par2|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|3713|3722|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|hms\betterzoom\gui\GuiModernSlider.java|3745|3750|width|field|net.minecraft.client.gui.GuiButton|width
+      @|hms\betterzoom\gui\GuiModernSlider.java|3760|3772|updateSlider|method|hms.betterzoom.gui.GuiModernSlider|updateSlider|()V
+      @|hms\betterzoom\gui\GuiModernSlider.java|3784|3792|dragging|field|hms.betterzoom.gui.GuiModernSlider|dragging
+   Method End: mousePressed(Lnet/minecraft/client/Minecraft;II)Z
+   Method Start: updateSlider()V
+      @|hms\betterzoom\gui\GuiModernSlider.java|3866|3878|updateSlider|method|hms.betterzoom.gui.GuiModernSlider|updateSlider|()V
+      @|hms\betterzoom\gui\GuiModernSlider.java|3894|3905|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|3924|3935|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|3960|3971|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|3990|4001|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4017|4023|String|class|java.lang.String
+      @|hms\betterzoom\gui\GuiModernSlider.java|4036|4047|showDecimal|field|hms.betterzoom.gui.GuiModernSlider|showDecimal
+      @|hms\betterzoom\gui\GuiModernSlider.java|4060|4066|Double|class|java.lang.Double
+      @|hms\betterzoom\gui\GuiModernSlider.java|4067|4075|toString|method|java.lang.Double|toString|(D)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|4076|4087|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4091|4099|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4102|4110|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4114|4122|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4137|4146|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|4151|4158|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|4169|4175|length|method|java.lang.CharSequence|length|()I
+      @|hms\betterzoom\gui\GuiModernSlider.java|4180|4189|precision|field|hms.betterzoom.gui.GuiModernSlider|precision
+      @|hms\betterzoom\gui\GuiModernSlider.java|4207|4216|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|4224|4231|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|4239|4248|precision|field|hms.betterzoom.gui.GuiModernSlider|precision
+      @|hms\betterzoom\gui\GuiModernSlider.java|4268|4276|endsWith|method|java.lang.String|endsWith|(Ljava/lang/String;)Z
+      @|hms\betterzoom\gui\GuiModernSlider.java|4300|4309|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|4317|4324|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|4332|4341|precision|field|hms.betterzoom.gui.GuiModernSlider|precision
+      @|hms\betterzoom\gui\GuiModernSlider.java|4377|4386|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|4391|4398|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|hms\betterzoom\gui\GuiModernSlider.java|4409|4415|length|method|java.lang.CharSequence|length|()I
+      @|hms\betterzoom\gui\GuiModernSlider.java|4420|4429|precision|field|hms.betterzoom.gui.GuiModernSlider|precision
+      @|hms\betterzoom\gui\GuiModernSlider.java|4486|4493|Integer|class|java.lang.Integer
+      @|hms\betterzoom\gui\GuiModernSlider.java|4494|4502|toString|method|java.lang.Integer|toString|(I)Ljava/lang/String;
+      @|hms\betterzoom\gui\GuiModernSlider.java|4509|4513|Math|class|java.lang.Math
+      @|hms\betterzoom\gui\GuiModernSlider.java|4514|4519|round|method|java.lang.Math|round|(D)J
+      @|hms\betterzoom\gui\GuiModernSlider.java|4520|4531|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4535|4543|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4546|4554|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4558|4566|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|4581|4591|drawString|field|hms.betterzoom.gui.GuiModernSlider|drawString
+      @|hms\betterzoom\gui\GuiModernSlider.java|4598|4611|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\GuiModernSlider.java|4614|4624|dispString|field|hms.betterzoom.gui.GuiModernSlider|dispString
+      @|hms\betterzoom\gui\GuiModernSlider.java|4633|4639|suffix|field|hms.betterzoom.gui.GuiModernSlider|suffix
+      @|hms\betterzoom\gui\GuiModernSlider.java|4652|4658|parent|field|hms.betterzoom.gui.GuiModernSlider|parent
+      @|hms\betterzoom\gui\GuiModernSlider.java|4673|4679|parent|field|hms.betterzoom.gui.GuiModernSlider|parent
+      @|hms\betterzoom\gui\GuiModernSlider.java|4680|4699|onChangeSliderValue|method|hms.betterzoom.gui.GuiModernSlider.ISlider|onChangeSliderValue|(Lhms/betterzoom/gui/GuiModernSlider;)V
+   Method End: updateSlider()V
+   Method Start: mouseReleased(II)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|4971|4984|mouseReleased|method|net.minecraft.client.gui.GuiButton|mouseReleased|(II)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|4989|4993|par1|param|hms.betterzoom.gui.GuiModernSlider|mouseReleased|(II)V|par1|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|4999|5003|par2|param|hms.betterzoom.gui.GuiModernSlider|mouseReleased|(II)V|par2|1
+      @|hms\betterzoom\gui\GuiModernSlider.java|5014|5022|dragging|field|hms.betterzoom.gui.GuiModernSlider|dragging
+   Method End: mouseReleased(II)V
+   Method Start: getValueInt()I
+      @|hms\betterzoom\gui\GuiModernSlider.java|5048|5059|getValueInt|method|hms.betterzoom.gui.GuiModernSlider|getValueInt|()I
+      @|hms\betterzoom\gui\GuiModernSlider.java|5079|5083|Math|class|java.lang.Math
+      @|hms\betterzoom\gui\GuiModernSlider.java|5084|5089|round|method|java.lang.Math|round|(D)J
+      @|hms\betterzoom\gui\GuiModernSlider.java|5090|5101|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5105|5113|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5116|5124|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5128|5136|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+   Method End: getValueInt()I
+   Method Start: getValue()D
+      @|hms\betterzoom\gui\GuiModernSlider.java|5158|5166|getValue|method|hms.betterzoom.gui.GuiModernSlider|getValue|()D
+      @|hms\betterzoom\gui\GuiModernSlider.java|5180|5191|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5195|5203|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5206|5214|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5218|5226|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+   Method End: getValue()D
+   Method Start: setValue(D)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|5245|5253|setValue|method|hms.betterzoom.gui.GuiModernSlider|setValue|(D)V
+      @|hms\betterzoom\gui\GuiModernSlider.java|5261|5262|d|param|hms.betterzoom.gui.GuiModernSlider|setValue|(D)V|d|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|5273|5284|sliderValue|field|hms.betterzoom.gui.GuiModernSlider|sliderValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5288|5289|d|param|hms.betterzoom.gui.GuiModernSlider|setValue|(D)V|d|0
+      @|hms\betterzoom\gui\GuiModernSlider.java|5292|5300|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5305|5313|maxValue|field|hms.betterzoom.gui.GuiModernSlider|maxValue
+      @|hms\betterzoom\gui\GuiModernSlider.java|5316|5324|minValue|field|hms.betterzoom.gui.GuiModernSlider|minValue
+   Method End: setValue(D)V
+   Class Start: hms.betterzoom.gui.GuiModernSlider.ISlider
+      Method Start: onChangeSliderValue(Lhms/betterzoom/gui/GuiModernSlider;)V
+         @|hms\betterzoom\gui\GuiModernSlider.java|5373|5392|onChangeSliderValue|method|hms.betterzoom.gui.GuiModernSlider.ISlider|onChangeSliderValue|(Lhms/betterzoom/gui/GuiModernSlider;)V
+         @|hms\betterzoom\gui\GuiModernSlider.java|5393|5408|GuiModernSlider|class|hms.betterzoom.gui.GuiModernSlider
+         @|hms\betterzoom\gui\GuiModernSlider.java|5409|5415|slider|param|hms.betterzoom.gui.GuiModernSlider.ISlider|onChangeSliderValue|(Lhms/betterzoom/gui/GuiModernSlider;)V|slider|0
+      Method End: onChangeSliderValue(Lhms/betterzoom/gui/GuiModernSlider;)V
+   Class End  : hms.betterzoom.gui.GuiModernSlider.ISlider
+Class End  : hms.betterzoom.gui.GuiModernSlider
+endProcessing hms\betterzoom\gui\GuiModernSlider.java
+
+processing hms\betterzoom\gui\MainGui.java
+@|hms\betterzoom\gui\MainGui.java|8|26|hms.betterzoom.gui|package|hms.betterzoom.gui|(file)
+Class Start: hms.betterzoom.gui.MainGui
+   @|hms\betterzoom\gui\MainGui.java|388|394|oldFov|field|hms.betterzoom.gui.MainGui|oldFov|
+   @|hms\betterzoom\gui\MainGui.java|401|416|GuiModernButton|class|hms.betterzoom.gui.GuiModernButton
+   @|hms\betterzoom\gui\MainGui.java|417|422|close|field|hms.betterzoom.gui.MainGui|close|
+   @|hms\betterzoom\gui\MainGui.java|425|440|GuiModernButton|class|hms.betterzoom.gui.GuiModernButton
+   @|hms\betterzoom\gui\MainGui.java|441|447|toggle|field|hms.betterzoom.gui.MainGui|toggle|
+   @|hms\betterzoom\gui\MainGui.java|450|465|GuiModernButton|class|hms.betterzoom.gui.GuiModernButton
+   @|hms\betterzoom\gui\MainGui.java|466|478|toggleSmooth|field|hms.betterzoom.gui.MainGui|toggleSmooth|
+   @|hms\betterzoom\gui\MainGui.java|481|496|GuiModernSlider|class|hms.betterzoom.gui.GuiModernSlider
+   @|hms\betterzoom\gui\MainGui.java|497|506|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl|
+   Method Start: closeScreen()V
+      @|hms\betterzoom\gui\MainGui.java|522|533|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|540|542|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|hms\betterzoom\gui\MainGui.java|543|552|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|hms\betterzoom\gui\MainGui.java|553|564|closeScreen|method|net.minecraft.entity.player.EntityPlayer|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|570|579|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|580|599|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\gui\MainGui.java|600|609|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl
+      @|hms\betterzoom\gui\MainGui.java|610|621|getValueInt|method|hms.betterzoom.gui.GuiModernSlider|getValueInt|()I
+      @|hms\betterzoom\gui\MainGui.java|628|630|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|hms\betterzoom\gui\MainGui.java|631|643|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\gui\MainGui.java|644|654|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\gui\MainGui.java|657|663|oldFov|field|hms.betterzoom.gui.MainGui|oldFov
+   Method End: closeScreen()V
+   Method Start: MainGui()V
+      @|hms\betterzoom\gui\MainGui.java|677|684|MainGui|method|hms.betterzoom.gui.MainGui|MainGui|()V
+      @|hms\betterzoom\gui\MainGui.java|702|708|oldFov|field|hms.betterzoom.gui.MainGui|oldFov
+      @|hms\betterzoom\gui\MainGui.java|711|720|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\MainGui.java|721|733|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\gui\MainGui.java|736|748|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\gui\MainGui.java|749|759|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+   Method End: MainGui()V
+   Method Start: initGui()V
+      @|hms\betterzoom\gui\MainGui.java|789|796|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|hms\betterzoom\gui\MainGui.java|809|816|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|hms\betterzoom\gui\MainGui.java|822|828|toggle|field|hms.betterzoom.gui.MainGui|toggle
+      @|hms\betterzoom\gui\MainGui.java|835|850|GuiModernButton|class|hms.betterzoom.gui.GuiModernButton
+      @|hms\betterzoom\gui\MainGui.java|854|859|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|886|894|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\MainGui.java|895|914|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\MainGui.java|915|924|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|925|937|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\gui\MainGui.java|964|976|toggleSmooth|field|hms.betterzoom.gui.MainGui|toggleSmooth
+      @|hms\betterzoom\gui\MainGui.java|983|998|GuiModernButton|class|hms.betterzoom.gui.GuiModernButton
+      @|hms\betterzoom\gui\MainGui.java|1002|1007|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|1034|1042|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\MainGui.java|1043|1062|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\MainGui.java|1063|1072|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1073|1094|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\gui\MainGui.java|1121|1126|close|field|hms.betterzoom.gui.MainGui|close
+      @|hms\betterzoom\gui\MainGui.java|1133|1148|GuiModernButton|class|hms.betterzoom.gui.GuiModernButton
+      @|hms\betterzoom\gui\MainGui.java|1152|1157|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|1168|1174|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|hms\betterzoom\gui\MainGui.java|1210|1219|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl
+      @|hms\betterzoom\gui\MainGui.java|1226|1241|GuiModernSlider|class|hms.betterzoom.gui.GuiModernSlider
+      @|hms\betterzoom\gui\MainGui.java|1245|1250|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|1315|1324|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1325|1341|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+      @|hms\betterzoom\gui\MainGui.java|1360|1370|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\MainGui.java|1371|1374|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\MainGui.java|1375|1381|toggle|field|hms.betterzoom.gui.MainGui|toggle
+      @|hms\betterzoom\gui\MainGui.java|1386|1396|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\MainGui.java|1397|1400|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\MainGui.java|1401|1413|toggleSmooth|field|hms.betterzoom.gui.MainGui|toggleSmooth
+      @|hms\betterzoom\gui\MainGui.java|1418|1428|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\MainGui.java|1429|1432|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\MainGui.java|1433|1442|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl
+      @|hms\betterzoom\gui\MainGui.java|1447|1457|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|hms\betterzoom\gui\MainGui.java|1458|1461|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|hms\betterzoom\gui\MainGui.java|1462|1467|close|field|hms.betterzoom.gui.MainGui|close
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|hms\betterzoom\gui\MainGui.java|1501|1516|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|hms\betterzoom\gui\MainGui.java|1542|1553|IOException|class|java.io.IOException
+      @|hms\betterzoom\gui\MainGui.java|1517|1526|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|hms\betterzoom\gui\MainGui.java|1527|1533|button|param|hms.betterzoom.gui.MainGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\MainGui.java|1562|1568|button|param|hms.betterzoom.gui.MainGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\MainGui.java|1572|1577|close|field|hms.betterzoom.gui.MainGui|close
+      @|hms\betterzoom\gui\MainGui.java|1589|1600|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|1617|1623|button|param|hms.betterzoom.gui.MainGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\MainGui.java|1627|1633|toggle|field|hms.betterzoom.gui.MainGui|toggle
+      @|hms\betterzoom\gui\MainGui.java|1640|1649|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1650|1660|setToggled|method|hms.betterzoom.ref.Reference|setToggled|(Z)V
+      @|hms\betterzoom\gui\MainGui.java|1662|1671|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1672|1684|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\gui\MainGui.java|1700|1706|button|param|hms.betterzoom.gui.MainGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\MainGui.java|1710|1722|toggleSmooth|field|hms.betterzoom.gui.MainGui|toggleSmooth
+      @|hms\betterzoom\gui\MainGui.java|1729|1738|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1739|1752|setSmoothZoom|method|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V
+      @|hms\betterzoom\gui\MainGui.java|1754|1763|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1764|1785|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\gui\MainGui.java|1801|1807|button|param|hms.betterzoom.gui.MainGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|hms\betterzoom\gui\MainGui.java|1811|1820|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl
+      @|hms\betterzoom\gui\MainGui.java|1827|1836|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|1837|1856|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\gui\MainGui.java|1857|1866|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl
+      @|hms\betterzoom\gui\MainGui.java|1867|1878|getValueInt|method|hms.betterzoom.gui.GuiModernSlider|getValueInt|()I
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: keyTyped(CI)V
+      @|hms\betterzoom\gui\MainGui.java|1918|1926|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|hms\betterzoom\gui\MainGui.java|1963|1974|IOException|class|java.io.IOException
+      @|hms\betterzoom\gui\MainGui.java|1932|1941|typedChar|param|hms.betterzoom.gui.MainGui|keyTyped|(CI)V|typedChar|0
+      @|hms\betterzoom\gui\MainGui.java|1947|1954|keyCode|param|hms.betterzoom.gui.MainGui|keyTyped|(CI)V|keyCode|1
+      @|hms\betterzoom\gui\MainGui.java|1983|1990|keyCode|param|hms.betterzoom.gui.MainGui|keyTyped|(CI)V|keyCode|1
+      @|hms\betterzoom\gui\MainGui.java|1994|2002|Keyboard|class|org.lwjgl.input.Keyboard
+      @|hms\betterzoom\gui\MainGui.java|2003|2013|KEY_ESCAPE|field|org.lwjgl.input.Keyboard|KEY_ESCAPE
+      @|hms\betterzoom\gui\MainGui.java|2025|2036|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|2052|2060|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|hms\betterzoom\gui\MainGui.java|2061|2070|typedChar|param|hms.betterzoom.gui.MainGui|keyTyped|(CI)V|typedChar|0
+      @|hms\betterzoom\gui\MainGui.java|2072|2079|keyCode|param|hms.betterzoom.gui.MainGui|keyTyped|(CI)V|keyCode|1
+   Method End: keyTyped(CI)V
+   Method Start: drawScreen(IIF)V
+      @|hms\betterzoom\gui\MainGui.java|2110|2120|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|hms\betterzoom\gui\MainGui.java|2125|2131|mouseX|param|hms.betterzoom.gui.MainGui|drawScreen|(IIF)V|mouseX|0
+      @|hms\betterzoom\gui\MainGui.java|2137|2143|mouseY|param|hms.betterzoom.gui.MainGui|drawScreen|(IIF)V|mouseY|1
+      @|hms\betterzoom\gui\MainGui.java|2151|2163|partialTicks|param|hms.betterzoom.gui.MainGui|drawScreen|(IIF)V|partialTicks|2
+      @|hms\betterzoom\gui\MainGui.java|2169|2178|Minecraft|class|net.minecraft.client.Minecraft
+      @|hms\betterzoom\gui\MainGui.java|2179|2191|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|hms\betterzoom\gui\MainGui.java|2194|2206|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|hms\betterzoom\gui\MainGui.java|2207|2218|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|hms\betterzoom\gui\MainGui.java|2223|2239|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|hms\betterzoom\gui\MainGui.java|2284|2305|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|hms\betterzoom\gui\MainGui.java|2306|2311|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|2340|2346|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|hms\betterzoom\gui\MainGui.java|2371|2381|drawString|method|net.minecraft.client.gui.Gui|drawString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|hms\betterzoom\gui\MainGui.java|2382|2397|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|hms\betterzoom\gui\MainGui.java|2414|2419|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|2461|2471|drawString|method|net.minecraft.client.gui.Gui|drawString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|hms\betterzoom\gui\MainGui.java|2472|2487|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|hms\betterzoom\gui\MainGui.java|2505|2510|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|2547|2553|toggle|field|hms.betterzoom.gui.MainGui|toggle
+      @|hms\betterzoom\gui\MainGui.java|2554|2567|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\MainGui.java|2570|2578|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\MainGui.java|2579|2598|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\MainGui.java|2599|2608|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|2609|2621|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\gui\MainGui.java|2639|2651|toggleSmooth|field|hms.betterzoom.gui.MainGui|toggleSmooth
+      @|hms\betterzoom\gui\MainGui.java|2652|2665|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|hms\betterzoom\gui\MainGui.java|2668|2676|Settings|class|hms.betterzoom.Commands.Settings
+      @|hms\betterzoom\gui\MainGui.java|2677|2696|convertBoolToString|method|hms.betterzoom.Commands.Settings|convertBoolToString|(ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|hms\betterzoom\gui\MainGui.java|2697|2706|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\gui\MainGui.java|2707|2728|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\gui\MainGui.java|2746|2748|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|hms\betterzoom\gui\MainGui.java|2749|2761|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|hms\betterzoom\gui\MainGui.java|2762|2772|fovSetting|field|net.minecraft.client.settings.GameSettings|fovSetting
+      @|hms\betterzoom\gui\MainGui.java|2775|2784|defaultZl|field|hms.betterzoom.gui.MainGui|defaultZl
+      @|hms\betterzoom\gui\MainGui.java|2785|2796|getValueInt|method|hms.betterzoom.gui.GuiModernSlider|getValueInt|()I
+      @|hms\betterzoom\gui\MainGui.java|2808|2818|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|hms\betterzoom\gui\MainGui.java|2819|2825|mouseX|param|hms.betterzoom.gui.MainGui|drawScreen|(IIF)V|mouseX|0
+      @|hms\betterzoom\gui\MainGui.java|2827|2833|mouseY|param|hms.betterzoom.gui.MainGui|drawScreen|(IIF)V|mouseY|1
+      @|hms\betterzoom\gui\MainGui.java|2835|2847|partialTicks|param|hms.betterzoom.gui.MainGui|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: mouseClicked(III)V
+      @|hms\betterzoom\gui\MainGui.java|2881|2893|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|hms\betterzoom\gui\MainGui.java|2942|2953|IOException|class|java.io.IOException
+      @|hms\betterzoom\gui\MainGui.java|2898|2904|mouseX|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseX|0
+      @|hms\betterzoom\gui\MainGui.java|2910|2916|mouseY|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseY|1
+      @|hms\betterzoom\gui\MainGui.java|2922|2933|mouseButton|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseButton|2
+      @|hms\betterzoom\gui\MainGui.java|2962|2968|mouseX|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseX|0
+      @|hms\betterzoom\gui\MainGui.java|2971|2976|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|2997|3008|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|3025|3031|mouseX|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseX|0
+      @|hms\betterzoom\gui\MainGui.java|3034|3039|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|hms\betterzoom\gui\MainGui.java|3060|3071|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|3093|3099|mouseY|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseY|1
+      @|hms\betterzoom\gui\MainGui.java|3117|3128|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|3146|3152|mouseY|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseY|1
+      @|hms\betterzoom\gui\MainGui.java|3171|3182|closeScreen|method|hms.betterzoom.gui.MainGui|closeScreen|()V
+      @|hms\betterzoom\gui\MainGui.java|3203|3215|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|hms\betterzoom\gui\MainGui.java|3216|3222|mouseX|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseX|0
+      @|hms\betterzoom\gui\MainGui.java|3224|3230|mouseY|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseY|1
+      @|hms\betterzoom\gui\MainGui.java|3232|3243|mouseButton|param|hms.betterzoom.gui.MainGui|mouseClicked|(III)V|mouseButton|2
+   Method End: mouseClicked(III)V
+   Method Start: doesGuiPauseGame()Z
+      @|hms\betterzoom\gui\MainGui.java|3277|3293|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+Class End  : hms.betterzoom.gui.MainGui
+endProcessing hms\betterzoom\gui\MainGui.java
+
+processing hms\betterzoom\ref\Reference.java
+@|hms\betterzoom\ref\Reference.java|8|26|hms.betterzoom.ref|package|hms.betterzoom.ref|(file)
+Class Start: hms.betterzoom.ref.Reference
+   @|hms\betterzoom\ref\Reference.java|270|276|String|class|java.lang.String
+   @|hms\betterzoom\ref\Reference.java|277|282|MODID|field|hms.betterzoom.ref.Reference|MODID|
+   @|hms\betterzoom\ref\Reference.java|313|319|String|class|java.lang.String
+   @|hms\betterzoom\ref\Reference.java|320|327|VERSION|field|hms.betterzoom.ref.Reference|VERSION|
+   @|hms\betterzoom\ref\Reference.java|358|364|String|class|java.lang.String
+   @|hms\betterzoom\ref\Reference.java|365|369|NAME|field|hms.betterzoom.ref.Reference|NAME|
+   @|hms\betterzoom\ref\Reference.java|405|421|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel|
+   @|hms\betterzoom\ref\Reference.java|446|467|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled|
+   @|hms\betterzoom\ref\Reference.java|492|504|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled|
+   Method Start: isModToggled()Z
+      @|hms\betterzoom\ref\Reference.java|530|542|isModToggled|method|hms.betterzoom.ref.Reference|isModToggled|()Z
+      @|hms\betterzoom\ref\Reference.java|564|570|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|586|591|Files|class|java.nio.file.Files
+      @|hms\betterzoom\ref\Reference.java|598|610|readAllLines|method|java.nio.file.Files|readAllLines|(Ljava/nio/file/Path;)Ljava/util/List;
+      @|hms\betterzoom\ref\Reference.java|619|624|Paths|class|java.nio.file.Paths
+      @|hms\betterzoom\ref\Reference.java|625|628|get|method|java.nio.file.Paths|get|(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      @|hms\betterzoom\ref\Reference.java|629|635|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\ref\Reference.java|636|644|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\ref\Reference.java|647|659|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\ref\Reference.java|662|677|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|714|717|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|hms\betterzoom\ref\Reference.java|721|728|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|780|787|Boolean|class|java.lang.Boolean
+      @|hms\betterzoom\ref\Reference.java|788|800|parseBoolean|method|java.lang.Boolean|parseBoolean|(Ljava/lang/String;)Z
+      @|hms\betterzoom\ref\Reference.java|850|859|Exception|class|java.lang.Exception
+      @|hms\betterzoom\ref\Reference.java|870|885|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|hms\betterzoom\ref\Reference.java|892|902|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|903|911|instance|field|hms.betterzoom.BetterZoom|instance
+      @|hms\betterzoom\ref\Reference.java|912|919|restart|method|hms.betterzoom.BetterZoom|restart|()V
+   Method End: isModToggled()Z
+   Method Start: isSmoothCameraEnabled()Z
+      @|hms\betterzoom\ref\Reference.java|971|992|isSmoothCameraEnabled|method|hms.betterzoom.ref.Reference|isSmoothCameraEnabled|()Z
+      @|hms\betterzoom\ref\Reference.java|1014|1020|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|1041|1046|Files|class|java.nio.file.Files
+      @|hms\betterzoom\ref\Reference.java|1053|1065|readAllLines|method|java.nio.file.Files|readAllLines|(Ljava/nio/file/Path;)Ljava/util/List;
+      @|hms\betterzoom\ref\Reference.java|1074|1079|Paths|class|java.nio.file.Paths
+      @|hms\betterzoom\ref\Reference.java|1080|1083|get|method|java.nio.file.Paths|get|(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      @|hms\betterzoom\ref\Reference.java|1084|1090|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\ref\Reference.java|1091|1099|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\ref\Reference.java|1102|1114|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\ref\Reference.java|1117|1132|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|1169|1172|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|hms\betterzoom\ref\Reference.java|1176|1183|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|1247|1254|Boolean|class|java.lang.Boolean
+      @|hms\betterzoom\ref\Reference.java|1255|1267|parseBoolean|method|java.lang.Boolean|parseBoolean|(Ljava/lang/String;)Z
+      @|hms\betterzoom\ref\Reference.java|1322|1331|Exception|class|java.lang.Exception
+      @|hms\betterzoom\ref\Reference.java|1342|1357|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|hms\betterzoom\ref\Reference.java|1364|1374|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|1375|1383|instance|field|hms.betterzoom.BetterZoom|instance
+      @|hms\betterzoom\ref\Reference.java|1384|1391|restart|method|hms.betterzoom.BetterZoom|restart|()V
+   Method End: isSmoothCameraEnabled()Z
+   Method Start: getDefaultZoomLevel()I
+      @|hms\betterzoom\ref\Reference.java|1438|1457|getDefaultZoomLevel|method|hms.betterzoom.ref.Reference|getDefaultZoomLevel|()I
+      @|hms\betterzoom\ref\Reference.java|1479|1485|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|1505|1510|Files|class|java.nio.file.Files
+      @|hms\betterzoom\ref\Reference.java|1517|1529|readAllLines|method|java.nio.file.Files|readAllLines|(Ljava/nio/file/Path;)Ljava/util/List;
+      @|hms\betterzoom\ref\Reference.java|1538|1543|Paths|class|java.nio.file.Paths
+      @|hms\betterzoom\ref\Reference.java|1544|1547|get|method|java.nio.file.Paths|get|(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      @|hms\betterzoom\ref\Reference.java|1548|1554|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\ref\Reference.java|1555|1563|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\ref\Reference.java|1566|1578|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\ref\Reference.java|1581|1596|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|1633|1636|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|hms\betterzoom\ref\Reference.java|1640|1647|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|1702|1709|Integer|class|java.lang.Integer
+      @|hms\betterzoom\ref\Reference.java|1710|1718|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|hms\betterzoom\ref\Reference.java|1772|1781|Exception|class|java.lang.Exception
+      @|hms\betterzoom\ref\Reference.java|1792|1807|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|hms\betterzoom\ref\Reference.java|1814|1824|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|1825|1833|instance|field|hms.betterzoom.BetterZoom|instance
+      @|hms\betterzoom\ref\Reference.java|1834|1841|restart|method|hms.betterzoom.BetterZoom|restart|()V
+   Method End: getDefaultZoomLevel()I
+   Method Start: setSmoothZoom(Z)V
+      @|hms\betterzoom\ref\Reference.java|1888|1901|setSmoothZoom|method|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V
+      @|hms\betterzoom\ref\Reference.java|1916|1933|smoothCameraValue|param|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V|smoothCameraValue|0
+      @|hms\betterzoom\ref\Reference.java|1948|1954|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|1967|1981|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\ref\Reference.java|1995|2009|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\ref\Reference.java|2020|2030|FileWriter|class|java.io.FileWriter
+      @|hms\betterzoom\ref\Reference.java|2031|2037|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\ref\Reference.java|2038|2046|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\ref\Reference.java|2049|2061|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\ref\Reference.java|2064|2079|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2121|2127|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|2145|2151|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|2152|2159|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2160|2172|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\ref\Reference.java|2187|2194|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|2208|2214|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|2244|2250|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|2251|2258|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2259|2276|smoothCameraValue|param|hms.betterzoom.ref.Reference|setSmoothZoom|(Z)V|smoothCameraValue|0
+      @|hms\betterzoom\ref\Reference.java|2291|2298|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|2312|2318|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|2343|2349|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|2350|2357|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2358|2374|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+      @|hms\betterzoom\ref\Reference.java|2389|2396|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|2410|2415|close|method|java.lang.AutoCloseable|close|()V
+      @|hms\betterzoom\ref\Reference.java|2422|2428|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|2443|2452|Exception|class|java.lang.Exception
+      @|hms\betterzoom\ref\Reference.java|2463|2478|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|hms\betterzoom\ref\Reference.java|2485|2495|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|2496|2504|instance|field|hms.betterzoom.BetterZoom|instance
+      @|hms\betterzoom\ref\Reference.java|2505|2512|restart|method|hms.betterzoom.BetterZoom|restart|()V
+   Method End: setSmoothZoom(Z)V
+   Method Start: setToggled(Z)V
+      @|hms\betterzoom\ref\Reference.java|2544|2554|setToggled|method|hms.betterzoom.ref.Reference|setToggled|(Z)V
+      @|hms\betterzoom\ref\Reference.java|2569|2584|modToggledValue|param|hms.betterzoom.ref.Reference|setToggled|(Z)V|modToggledValue|0
+      @|hms\betterzoom\ref\Reference.java|2599|2605|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|2618|2632|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\ref\Reference.java|2646|2660|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\ref\Reference.java|2671|2681|FileWriter|class|java.io.FileWriter
+      @|hms\betterzoom\ref\Reference.java|2682|2688|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\ref\Reference.java|2689|2697|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\ref\Reference.java|2700|2712|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\ref\Reference.java|2715|2730|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2772|2778|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|2796|2802|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|2803|2810|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2811|2826|modToggledValue|param|hms.betterzoom.ref.Reference|setToggled|(Z)V|modToggledValue|0
+      @|hms\betterzoom\ref\Reference.java|2841|2848|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|2862|2868|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|2898|2904|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|2905|2912|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|2913|2934|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\ref\Reference.java|2949|2956|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|2970|2976|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|3001|3007|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|3008|3015|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|3016|3032|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+      @|hms\betterzoom\ref\Reference.java|3047|3054|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|3068|3073|close|method|java.lang.AutoCloseable|close|()V
+      @|hms\betterzoom\ref\Reference.java|3080|3086|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|3101|3110|Exception|class|java.lang.Exception
+      @|hms\betterzoom\ref\Reference.java|3121|3136|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|hms\betterzoom\ref\Reference.java|3143|3153|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|3154|3162|instance|field|hms.betterzoom.BetterZoom|instance
+      @|hms\betterzoom\ref\Reference.java|3163|3170|restart|method|hms.betterzoom.BetterZoom|restart|()V
+   Method End: setToggled(Z)V
+   Method Start: setDefaultZoomLevel(I)V
+      @|hms\betterzoom\ref\Reference.java|3202|3221|setDefaultZoomLevel|method|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V
+      @|hms\betterzoom\ref\Reference.java|3232|3248|defaultZoomLevel|param|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V|defaultZoomLevel|0
+      @|hms\betterzoom\ref\Reference.java|3263|3269|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|3282|3296|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\ref\Reference.java|3310|3324|BufferedWriter|class|java.io.BufferedWriter
+      @|hms\betterzoom\ref\Reference.java|3335|3345|FileWriter|class|java.io.FileWriter
+      @|hms\betterzoom\ref\Reference.java|3346|3352|Loader|class|net.minecraftforge.fml.common.Loader
+      @|hms\betterzoom\ref\Reference.java|3353|3361|instance|method|net.minecraftforge.fml.common.Loader|instance|()Lnet/minecraftforge/fml/common/Loader;
+      @|hms\betterzoom\ref\Reference.java|3364|3376|getConfigDir|method|net.minecraftforge.fml.common.Loader|getConfigDir|()Ljava/io/File;
+      @|hms\betterzoom\ref\Reference.java|3379|3394|getAbsolutePath|method|java.io.File|getAbsolutePath|()Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|3436|3442|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|3460|3466|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|3467|3474|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|3475|3487|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\ref\Reference.java|3502|3509|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|3523|3529|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|3559|3565|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|3566|3573|valueOf|method|java.lang.String|valueOf|(Z)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|3574|3595|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\ref\Reference.java|3610|3617|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|3631|3637|append|method|java.lang.Appendable|append|(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+      @|hms\betterzoom\ref\Reference.java|3662|3668|String|class|java.lang.String
+      @|hms\betterzoom\ref\Reference.java|3669|3676|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
+      @|hms\betterzoom\ref\Reference.java|3677|3693|defaultZoomLevel|param|hms.betterzoom.ref.Reference|setDefaultZoomLevel|(I)V|defaultZoomLevel|0
+      @|hms\betterzoom\ref\Reference.java|3708|3715|newLine|method|java.io.BufferedWriter|newLine|()V
+      @|hms\betterzoom\ref\Reference.java|3729|3734|close|method|java.lang.AutoCloseable|close|()V
+      @|hms\betterzoom\ref\Reference.java|3741|3747|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|3762|3771|Exception|class|java.lang.Exception
+      @|hms\betterzoom\ref\Reference.java|3782|3797|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|hms\betterzoom\ref\Reference.java|3804|3814|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|3815|3823|instance|field|hms.betterzoom.BetterZoom|instance
+      @|hms\betterzoom\ref\Reference.java|3824|3831|restart|method|hms.betterzoom.BetterZoom|restart|()V
+   Method End: setDefaultZoomLevel(I)V
+   Method Start: update()V
+      @|hms\betterzoom\ref\Reference.java|3863|3869|update|method|hms.betterzoom.ref.Reference|update|()V
+      @|hms\betterzoom\ref\Reference.java|3876|3885|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ref\Reference.java|3886|3898|isModToggled|field|hms.betterzoom.ref.Reference|isModToggled
+      @|hms\betterzoom\ref\Reference.java|3901|3913|isModToggled|method|hms.betterzoom.ref.Reference|isModToggled|()Z
+      @|hms\betterzoom\ref\Reference.java|3919|3928|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ref\Reference.java|3929|3950|isSmoothCameraEnabled|field|hms.betterzoom.ref.Reference|isSmoothCameraEnabled
+      @|hms\betterzoom\ref\Reference.java|3953|3974|isSmoothCameraEnabled|method|hms.betterzoom.ref.Reference|isSmoothCameraEnabled|()Z
+      @|hms\betterzoom\ref\Reference.java|3980|3989|Reference|class|hms.betterzoom.ref.Reference
+      @|hms\betterzoom\ref\Reference.java|3990|4006|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+      @|hms\betterzoom\ref\Reference.java|4009|4028|getDefaultZoomLevel|method|hms.betterzoom.ref.Reference|getDefaultZoomLevel|()I
+      @|hms\betterzoom\ref\Reference.java|4034|4044|BetterZoom|class|hms.betterzoom.BetterZoom
+      @|hms\betterzoom\ref\Reference.java|4045|4055|zeInstance|field|hms.betterzoom.BetterZoom|zeInstance
+      @|hms\betterzoom\ref\Reference.java|4056|4058|zo|field|hms.betterzoom.ZoomEvent|zo
+      @|hms\betterzoom\ref\Reference.java|4061|4077|defaultZoomLevel|field|hms.betterzoom.ref.Reference|defaultZoomLevel
+   Method End: update()V
+Class End  : hms.betterzoom.ref.Reference
+endProcessing hms\betterzoom\ref\Reference.java
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="1.7"/>
+			<item value="proxy"/>
+			<item value="ref"/>
+			<item value="IOException"/>
+			<item value="config/be"/>
+			<item value="config/"/>
+			<item value="Gui("/>
+			<item value="Gui()"/>
+			<item value="doneWidth"/>
+			<item value="done"/>
+			<item value="mainConfigGuiClass"/>
+			<item value="mainConfigGuiClass."/>
+			<item value="mainConfigClass.g"/>
+			<item value="mainConfigClass."/>
+			<item value="config"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Exception"/>
+			<item value="this.closeScreen"/>
+			<item value="this.closeScreen()"/>
+			<item value=":"/>
+			<item value="b"/>
+			<item value="BetterZoomConfig.cfg"/>
+			<item value="config/config.cfg"/>
+			<item value="getMinecraft()"/>
+			<item value="new jlek"/>
+			<item value="addMessage"/>
+			<item value="isSmoothCameraEnabled"/>
+			<item value="writer."/>
+			<item value="writer"/>
+			<item value=""/>
+			<item value="addChatMessage"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="8"/>
+		<item key="DIALOG_Y_ORIGIN" value="404"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="729"/>
+		<item key="DIALOG_Y_ORIGIN" value="403"/>
+	</section>
+</section>
