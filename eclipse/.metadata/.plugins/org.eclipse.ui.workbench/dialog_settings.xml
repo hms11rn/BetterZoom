@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="EditorSelectionDialog">
-		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.sf.feeling.decompiler.ClassFileEditor"/>
-	</section>
-	<section name="NewWizardAction">
-	</section>
-</section>
