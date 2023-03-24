@@ -16,6 +16,7 @@ public class Reference {
 	public static boolean isSmoothCameraEnabled;
 	public static boolean isModToggled;
 
+	//TODO change to forge config.
 	public static boolean isModToggled() {
 		try {
 			final String isModToggled = Files
@@ -62,6 +63,7 @@ public class Reference {
 
 	}
 
+	//TODO change to forge config
 	public static void setSmoothZoom(final boolean smoothCameraValue) {
 		try {
 			update();
@@ -81,6 +83,7 @@ public class Reference {
 		}
 	}
 
+	//TODO change to forge config
 	public static void setToggled(final boolean modToggledValue) {
 		try {
 			update();
@@ -100,6 +103,7 @@ public class Reference {
 		}
 	}
 
+	//TODO change to forge config
 	public static void setDefaultZoomLevel(final int defaultZoomLevel) {
 		try {
 			update();
@@ -123,6 +127,6 @@ public class Reference {
 		Reference.isModToggled = isModToggled();
 		Reference.isSmoothCameraEnabled = isSmoothCameraEnabled();
 		Reference.defaultZoomLevel = getDefaultZoomLevel();
-		BetterZoom.zeInstance.zo = defaultZoomLevel;
+		BetterZoom.instance.zeInstance.zo = defaultZoomLevel;
 	}
 }

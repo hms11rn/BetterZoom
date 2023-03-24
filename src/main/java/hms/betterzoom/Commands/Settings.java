@@ -16,7 +16,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 
+/**
+ * Command class
+ */
 public class Settings extends CommandBase {
+	/**
+	 * Betterzoom text.
+	 */
 	public static String bz;
 	public boolean silentCommand = false;
 
@@ -28,6 +34,16 @@ public class Settings extends CommandBase {
 		return "/";
 	}
 
+	/**
+	 * There is a gui, but also a command <br>
+	 * for the first argument there can be 3 options
+	 * off - turn off betterzoom, on - turn on betterzoom, smoothcamera - turn on and off smooth camera.
+	 * the third argument is for typing disabled/enabled<br>
+	 * there is a third argument "-s" that was for during testing, but decided to keep it
+	 * @param sender
+	 * @param args
+	 * @throws CommandException
+	 */
 	public void processCommand(final ICommandSender sender, final String[] args) throws CommandException {
 		if (args.length == 3) {
 			if (args[2].equalsIgnoreCase("-s")) {
@@ -98,6 +114,13 @@ public class Settings extends CommandBase {
 		return true;
 	}
 
+	/**
+	 * Tab completion, so you can press 'tab' and get completions for it.
+	 * @param sender
+	 * @param args
+	 * @param pos
+	 * @return
+	 */
 	@Override
 	public List<String> addTabCompletionOptions(final ICommandSender sender, final String[] args, final BlockPos pos) {
 		if (args.length == 1) {
@@ -123,6 +146,10 @@ public class Settings extends CommandBase {
 				+ EnumChatFormatting.BLACK + "] " + EnumChatFormatting.AQUA + "");
 	}
 
+	/**
+	 * Adds message unless -s tag is called with command.
+	 * @param message
+	 */
 	private void addMessage(ChatComponentText message) {
 		if (silentCommand == true) {
 			silentCommand = false;
@@ -131,20 +158,31 @@ public class Settings extends CommandBase {
 		Minecraft.getMinecraft().thePlayer.addChatMessage(message);
 	}
 
+	/**
+	 * Validates zoom level, zoom level can't be smaller than 2
+	 * @param i
+	 * @return
+	 */
 	public boolean validateZoomLevel(int i) {
-		if (i > 2) {
+		if (i > 2)
 			return true;
-		} else {
+		 else
 			return false;
-		}
 	}
 
+	/**
+	 * Little util command to convert a boolean to one of 2 strings
+	 * @param bool boolean
+	 * @param falseV text to return if boolean is false
+	 * @param trueV text to return if boolean is true
+	 * @return
+	 */
 	public static String convertBoolToString(boolean bool, String falseV, String trueV) {
-		if (bool == true) {
+		if (bool == true)
 			return trueV;
-		} else {
+		else
 			return falseV;
-		}
+
 	}
 
 	public ChatComponentText getMessage(String message) {
@@ -153,6 +191,10 @@ public class Settings extends CommandBase {
 		return ret;
 	}
 
+	/**
+	 * Custom to string.
+	 * @return
+	 */
 	@Override
 	public String toString() {
 
@@ -160,6 +202,15 @@ public class Settings extends CommandBase {
 				+ "true" + ",getCommandUsage=\"/\"" + "]";
 	}
 
+	/**
+	 * Tick event. <br> There is a bug in Minecraft that if you try to open a GUI,
+	 * when code is not synced with a tick, it won't open, therefore the solution is
+	 * to set a Tick event and when you are trying to open a GUI, you Register the class
+	 * to forge Event Bus, then tick event is run, and you can open GUI while being synced with a Tick.
+	 *<br><br>
+	 * I saw this trick in Sk1er's discord server.
+	 * @param e Event input, not used here.
+	 */
 	@SubscribeEvent
 	public void onTick(ClientTickEvent e) {
 		Minecraft.getMinecraft().displayGuiScreen(new MainGui());

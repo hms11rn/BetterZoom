@@ -21,13 +21,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME, guiFactory = "hms.betterzoom.gui.Config")
 public class BetterZoom {
 
-//	@SidedProxy(serverSide = Reference.SERVER_PROXY_CLASS, clientSide = Reference.CLIENT_PROXY_CLASS)
-//	public static CommonProxy proxy;
-
 	@Mod.Instance("btz")
 	public static BetterZoom instance;
 
-	public static ZoomEvent zeInstance;
+	public ZoomEvent zeInstance;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -37,7 +34,7 @@ public class BetterZoom {
 			createConfigFile();
 		}
 		ZoomEvent ze = new ZoomEvent();
-		BetterZoom.zeInstance = ze;
+		this.zeInstance = ze;
 		ZoomKeyBind.register();
 		ClientCommandHandler.instance.registerCommand(new Settings());
 		MinecraftForge.EVENT_BUS.register(ze);
@@ -94,7 +91,7 @@ public class BetterZoom {
 		}
 		return false;
 	}
-
+	//TODO change to forge config
 	private boolean createConfigFile() { // If it returns false it
 											// means an error occurred.
 		try {

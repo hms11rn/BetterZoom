@@ -9,6 +9,9 @@ public class ZoomKeyBind {
 
 	public static KeyBinding zoom;
 
+	/**
+	 * Registers keybind to Minecraft
+	 */
 	public static void register() {
 		zoom = new KeyBinding("Better Zoom", Keyboard.KEY_C, "key.categories.misc");
 		ClientRegistry.registerKeyBinding(zoom);

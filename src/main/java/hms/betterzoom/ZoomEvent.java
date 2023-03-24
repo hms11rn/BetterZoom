@@ -55,7 +55,7 @@ public class ZoomEvent {
 	}
 
 	/**
-	 * Every game tick it checks that if {@code ZoomKeyBind.zoom.iskeyDown}
+	 * Every game tick it checks that if {@link ZoomKeyBind#zoom} .isKeyDown
 	 */
 	@SubscribeEvent
 	public void tickUpdate(final ClientTickEvent e) {
