@@ -10,7 +10,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
 public class GuiModernButton extends GuiButton {
-	protected static final ResourceLocation buttonTextures = new ResourceLocation("btz:textures/gui/widgets.png");
+	protected static final ResourceLocation buttonTextures = new ResourceLocation("btz/textures/gui/widgets.png");
 
 	public GuiModernButton(int buttonId, int x, int y, String buttonText) {
 		super(buttonId, x, y, 200, 20, buttonText);

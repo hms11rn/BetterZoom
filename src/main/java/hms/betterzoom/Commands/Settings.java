@@ -90,9 +90,14 @@ public class Settings extends CommandBase {
 				} else {
 					addMessage(getMessage(bz + "Usage: /betterzoom DefaultZoomLevel <Number>"));
 				}
-			} else if (args[0].equalsIgnoreCase("reload")) {
+			} else if (args[0].equalsIgnoreCase("scrollwheel")) {
+				Reference.setIsScrollWheelToggled(!Reference.checkScrollWheelToggled);
+				addMessage(getMessage(bz + "Scroll to Zoom is now " + Reference.checkScrollWheelToggled + "!"));
+			}
+			else if (args[0].equalsIgnoreCase("reload")) {
 				addMessage(getMessage(bz + "BetterZoom reloaded"));
-			} else {
+			}
+			else {
 				addMessage(getMessage(bz + "======"));
 				addMessage(getMessage("Available commands"));
 				addMessage(getMessage("/betterzoom toggle - toggle the mod"));

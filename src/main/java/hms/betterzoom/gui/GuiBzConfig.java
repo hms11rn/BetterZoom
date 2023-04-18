@@ -18,6 +18,7 @@ public class GuiBzConfig extends GuiScreen {
 	GuiButton close;
 	GuiButton toggle;
 	GuiButton toggleSmooth;
+	GuiButton toggleSW;
 	GuiSlider defaultZl;
 	GuiScreen parent;
 
@@ -32,18 +33,21 @@ public class GuiBzConfig extends GuiScreen {
 				Settings.convertBoolToString(Reference.isModToggled, "off", "on")); // - 55
 		toggleSmooth = new GuiButton(0, width / 2 + 15, 87, 20, 13,
 				Settings.convertBoolToString(Reference.isSmoothCameraEnabled, "off", "on")); // - 55
+		toggleSW = new GuiButton(0, width / 2 + 15, 50, 20, 13,
+				Settings.convertBoolToString(Reference.checkScrollWheelToggled, "off", "on"));
 		close = new GuiButton(1, width / 2 - 20, height - 100, 60, 20, "Close"); // - 95
 		defaultZl = new GuiSlider(2, width / 2 - 55, 109, 130, 20, "Default Zoom Level: ", "", 3, 100,
 				Reference.defaultZoomLevel, false, true);
 
 		buttonList.add(toggle);
 		buttonList.add(toggleSmooth);
+		buttonList.add(toggleSW);
 		buttonList.add(defaultZl);
 		buttonList.add(close);
 	}
 
 	@Override
-	protected void actionPerformed(GuiButton button) throws IOException {
+	protected void actionPerformed(GuiButton button) {
 		if (button == close) {
 			Reference.setDefaultZoomLevel(this.defaultZl.getValueInt());
 			MinecraftForge.EVENT_BUS.register(this);
@@ -69,7 +73,7 @@ public class GuiBzConfig extends GuiScreen {
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         this.drawBackground(0);
 		this.drawString(fontRendererObj, "BetterZoom ", width / 2 - 55, 65, -2039584); // - 120
-		this.drawString(fontRendererObj, "Smoot Camera", width / 2 - 55, 90, -2039584); // - 120
+		this.drawString(fontRendererObj, "Smooth Camera", width / 2 - 55, 90, -2039584); // - 120
 		toggle.displayString = Settings.convertBoolToString(Reference.isModToggled, "off", "on");
 		toggleSmooth.displayString = Settings.convertBoolToString(Reference.isSmoothCameraEnabled, "off", "on");
 		super.drawScreen(mouseX, mouseY, partialTicks);
