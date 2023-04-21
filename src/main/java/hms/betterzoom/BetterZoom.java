@@ -104,6 +104,7 @@ public class BetterZoom {
 				writer.newLine();
 				writer.append(("[DefaultZoomLevel]" + String.valueOf(20)));
 				writer.newLine();
+				writer.append(("[IsScrollWheelEnabled]" + String.valueOf(true)));
 				writer.close();
 				Reference.update();
 			} else {

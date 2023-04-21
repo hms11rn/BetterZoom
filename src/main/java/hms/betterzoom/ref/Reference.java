@@ -14,6 +14,7 @@ public class Reference {
 	public static final String NAME = "BetterZoom";
 	public static int defaultZoomLevel;
 	public static boolean isSmoothCameraEnabled;
+	public static boolean checkScrollWheelToggled;
 	public static boolean isModToggled;
 
 	//TODO change to forge config.
@@ -23,8 +24,7 @@ public class Reference {
 					.readAllLines(
 							Paths.get(Loader.instance().getConfigDir().getAbsolutePath() + "/BetterZoomConfig.cfg"))
 					.get(0).replace("[IsToggled]", "");
-			final boolean returnValue = Boolean.parseBoolean(isModToggled);
-			return returnValue;
+			return Boolean.parseBoolean(isModToggled);
 		} catch (Exception e) {
 			e.printStackTrace();
 			BetterZoom.instance.restart();
@@ -38,8 +38,21 @@ public class Reference {
 					.readAllLines(
 							Paths.get(Loader.instance().getConfigDir().getAbsolutePath() + "/BetterZoomConfig.cfg"))
 					.get(1).replace("[IsSmoothCameraEnabled]", "");
-			final boolean returnValue = Boolean.parseBoolean(smoothCameraValue);
-			return returnValue;
+			return Boolean.parseBoolean(smoothCameraValue);
+		} catch (Exception e) {
+			e.printStackTrace();
+			BetterZoom.instance.restart();
+			return true;
+		}
+	}
+
+	public static boolean isScrollWheelToggled() {
+		try {
+			final String scrollWheelValue = Files
+					.readAllLines(
+							Paths.get(Loader.instance().getConfigDir().getAbsolutePath() + "/BetterZoomConfig.cfg"))
+					.get(3).replace("[IsScrollWheelEnabled]", "");
+			return Boolean.parseBoolean(scrollWheelValue);
 		} catch (Exception e) {
 			e.printStackTrace();
 			BetterZoom.instance.restart();
@@ -53,8 +66,7 @@ public class Reference {
 					.readAllLines(
 							Paths.get(Loader.instance().getConfigDir().getAbsolutePath() + "/BetterZoomConfig.cfg"))
 					.get(2).replace("[DefaultZoomLevel]", "");
-			final int returnValue = Integer.parseInt(defaultZoomLevel);
-			return returnValue;
+			return Integer.parseInt(defaultZoomLevel);
 		} catch (Exception e) {
 			e.printStackTrace();
 			BetterZoom.instance.restart();
@@ -74,6 +86,8 @@ public class Reference {
 			writer.append(("[IsSmoothCameraEnabled]" + String.valueOf(smoothCameraValue)));
 			writer.newLine();
 			writer.append(("[DefaultZoomLevel]" + String.valueOf(defaultZoomLevel)));
+			writer.newLine();
+			writer.append(("[IsScrollWheelEnabled]" + String.valueOf(checkScrollWheelToggled)));
 			writer.newLine();
 			writer.close();
 			update();
@@ -95,6 +109,29 @@ public class Reference {
 			writer.newLine();
 			writer.append(("[DefaultZoomLevel]" + String.valueOf(defaultZoomLevel)));
 			writer.newLine();
+			writer.append(("[IsScrollWheelEnabled]" + String.valueOf(checkScrollWheelToggled)));
+			writer.newLine();
+			writer.close();
+			update();
+		} catch (Exception e) {
+			e.printStackTrace();
+			BetterZoom.instance.restart();
+		}
+	}
+
+	public static void setIsScrollWheelToggled(final boolean SWValue) {
+		try {
+			update();
+			final BufferedWriter writer = new BufferedWriter(
+					new FileWriter(Loader.instance().getConfigDir().getAbsolutePath() + "/BetterZoomConfig.cfg"));
+			writer.append(("[IsToggled]" + String.valueOf(isModToggled)));
+			writer.newLine();
+			writer.append(("[IsSmoothCameraEnabled]" + String.valueOf(isSmoothCameraEnabled)));
+			writer.newLine();
+			writer.append(("[DefaultZoomLevel]" + String.valueOf(defaultZoomLevel)));
+			writer.newLine();
+			writer.append(("[IsScrollWheelEnabled]" + String.valueOf(SWValue)));
+			writer.newLine();
 			writer.close();
 			update();
 		} catch (Exception e) {
@@ -115,6 +152,8 @@ public class Reference {
 			writer.newLine();
 			writer.append(("[DefaultZoomLevel]" + String.valueOf(defaultZoomLevel)));
 			writer.newLine();
+			writer.append(("[IsScrollWheelEnabled]" + String.valueOf(checkScrollWheelToggled)));
+			writer.newLine();
 			writer.close();
 			update();
 		} catch (Exception e) {
@@ -127,6 +166,7 @@ public class Reference {
 		Reference.isModToggled = isModToggled();
 		Reference.isSmoothCameraEnabled = isSmoothCameraEnabled();
 		Reference.defaultZoomLevel = getDefaultZoomLevel();
+		Reference.checkScrollWheelToggled = isScrollWheelToggled();
 		BetterZoom.instance.zeInstance.zo = defaultZoomLevel;
 	}
 }

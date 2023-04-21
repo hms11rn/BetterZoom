@@ -30,7 +30,7 @@ public class ZoomEvent {
 	 */
 	@SubscribeEvent
 	public void onMouseEvent(final MouseEvent event) {
-		if (Reference.isModToggled) {
+		if (Reference.isModToggled && Reference.checkScrollWheelToggled) {
 			this.scroll = (float) event.dwheel;
 			if (ZoomKeyBind.zoom.isKeyDown()) {
 				if (this.scroll < 0.0f && this.zo < 150.0f) {
